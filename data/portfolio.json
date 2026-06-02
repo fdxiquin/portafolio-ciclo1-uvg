@@ -97,9 +97,9 @@
           "technologies": [
             "Python",
             "Streamlit",
-            "módulos",
+            "módulos de Python",
             "diccionarios",
-            "PDF/DOCX como documentación"
+            "validación de entradas"
           ],
           "results": "Se desarrolló una propuesta de programa que recopila datos del estudiante, evalúa intereses y genera recomendaciones de carreras con recursos para ampliar información.",
           "learnings": "Aprendí a liderar una entrega técnica, dividir responsabilidades, definir variables antes de programar y validar entradas para evitar respuestas incorrectas.",
@@ -139,7 +139,7 @@
             "pandas",
             "Streamlit",
             "CSV",
-            "gráficas interactivas"
+            "visualización de datos"
           ],
           "results": "Se creó una página con filtros por tipo, generación y legendarios, métricas de conteo, tabla filtrada y gráficas por tipo y generación.",
           "learnings": "Aprendí que una buena visualización depende tanto del dato como de la interacción: filtrar bien cambia la forma de entender el conjunto.",
@@ -185,8 +185,7 @@
           "technologies": [
             "análisis de caso",
             "discusión académica",
-            "trabajo colaborativo",
-            "recurso visual JPEG"
+            "trabajo colaborativo"
           ],
           "results": "Se abordó un problema con varias preguntas, integrando conceptos de diferentes unidades para construir una respuesta razonada.",
           "learnings": "Aprendí a organizar evidencia, distinguir datos importantes y justificar decisiones en equipo.",
@@ -216,7 +215,6 @@
           "technologies": [
             "observación científica",
             "registro de campo",
-            "PDF",
             "taxonomía básica"
           ],
           "results": "Se registraron observaciones sobre plantas y orquídeas, incluyendo la importancia de datos como ubicación, recolecta, colector y validación de hallazgos.",
@@ -250,8 +248,7 @@
           "technologies": [
             "análisis químico",
             "macromoléculas",
-            "registro de resultados",
-            "PDF"
+            "registro experimental"
           ],
           "results": "Se completaron cuadros de resultados y comparaciones de pruebas, observando cambios que ayudan a identificar distintos tipos de moléculas biológicas.",
           "learnings": "Aprendí a interpretar evidencias visuales, comparar resultados y cuidar la precisión en el registro experimental.",
@@ -285,8 +282,7 @@
             "biotecnología",
             "electroforesis",
             "microscopía",
-            "análisis de caso",
-            "PDF"
+            "análisis de caso"
           ],
           "results": "Se interpretaron resultados simulados, se compararon hipótesis con evidencias y se registraron observaciones de bacterias al microscopio.",
           "learnings": "Aprendí a conectar procedimiento, hipótesis y evidencia; también a tratar los resultados como parte de una cadena de razonamiento.",
@@ -328,8 +324,7 @@
             "investigación",
             "corrección asistida",
             "PowerPoint",
-            "PDF",
-            "herramientas de IA usadas con criterio"
+            "IA generativa"
           ],
           "results": "Se desarrolló un artículo final, una presentación y evidencia del proceso desde idea, estructura, borradores, correcciones y versión final.",
           "learnings": "Aprendí a defender una postura con respaldo, usar IA como apoyo sin perder juicio propio y revisar el texto para hacerlo más claro y responsable.",
@@ -365,8 +360,7 @@
             "Canva",
             "edición de video",
             "ElevenLabs",
-            "edición de imagen",
-            "MP4"
+            "edición de imagen"
           ],
           "results": "Se produjo un video final diseñado para invitar al público a interesarse por el libro leído.",
           "learnings": "Aprendí a transformar una interpretación literaria en narrativa audiovisual y a usar recursos de edición para comunicar con intención.",
@@ -401,8 +395,7 @@
             "investigación académica",
             "panel oral",
             "búsqueda bibliográfica",
-            "PDF",
-            "presentación"
+            "presentación oral"
           ],
           "results": "Se preparó un informe de investigación, una dinámica de panel, referencias y una presentación ante compañeros del curso.",
           "learnings": "Aprendí a moderar, conectar ideas en tiempo real, cuidar el ritmo de una conversación y convertir investigación en experiencia para el público.",
@@ -445,7 +438,6 @@
           "authors": "Autor del portafolio. Versión pública sin datos personales.",
           "technologies": [
             "MIT App Inventor",
-            "AIA",
             "diseño de interfaz",
             "eventos de usuario"
           ],
@@ -481,12 +473,10 @@
           "authors": "Equipo de trabajo del curso. Versión pública sin nombres de participantes ni datos biométricos crudos.",
           "technologies": [
             "impresión 3D",
-            "STL",
             "HTML",
             "documentación técnica",
             "NeuroLab",
-            "análisis de métricas biométricas",
-            "PDF/DOCX"
+            "análisis de métricas biométricas"
           ],
           "results": "Se documentó el uso de una pirámide tipo rompecabezas, se generó una guía de ensamblaje y se trabajó con explicaciones de métricas biométricas. La versión pública conserva el proceso y omite datos personales o sensibles.",
           "learnings": "Aprendí a equilibrar creatividad técnica con ética de datos: no todo lo que se puede medir debe publicarse completo.",
@@ -560,9 +550,7 @@
             "Java",
             "Greenfoot",
             "programación orientada a objetos",
-            "imágenes PNG/JPEG",
-            "sonidos MP3",
-            "MP4"
+            "recursos multimedia"
           ],
           "results": "Se creó un mundo de 600x400 con personaje, tuberías, puntaje, sonidos de vuelo/colisión y pantalla de Game Over.",
           "learnings": "Aprendí a pensar en objetos que actúan dentro de un mundo, a separar clases y a conectar interacción del usuario con respuesta visual y sonora.",
@@ -678,9 +666,7 @@
           "technologies": [
             "química experimental",
             "cristalización",
-            "observación",
-            "PDF",
-            "PNG"
+            "observación"
           ],
           "results": "Se observaron cristales y se concluyó que factores como vibraciones o temperatura inestable afectaron el resultado.",
           "learnings": "Aprendí que en química experimental el ambiente importa: controlar condiciones puede ser tan importante como seguir el procedimiento.",
@@ -715,7 +701,7 @@
             "química general",
             "electroquímica",
             "energía alternativa",
-            "poster científico",
+            "póster científico",
             "prototipo experimental"
           ],
           "results": "Se desarrolló un sistema experimental y un póster científico orientado a energía alternativa de bajo costo.",
@@ -757,9 +743,7 @@
             "calorimetría",
             "combustión",
             "medición de temperatura",
-            "análisis de error",
-            "PDF",
-            "fotografía de laboratorio"
+            "análisis de error"
           ],
           "results": "Se obtuvieron datos energéticos, se compararon con el empaque y se identificó error experimental asociado a pérdidas de calor y condiciones del montaje.",
           "learnings": "Aprendí a conectar medición, cálculo y discusión de error; también a reconocer que un experimento puede cumplir su propósito aunque no sea perfecto.",

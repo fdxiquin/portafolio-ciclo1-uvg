@@ -166,7 +166,7 @@ def project_matches(project: dict, query: str) -> bool:
 def filter_projects(projects: list[dict], subjects: list[dict], technologies: list[str]) -> list[dict]:
     subject_options = ["Todas"] + [subject["name"] for subject in subjects]
     selected_subject = st.sidebar.selectbox("Materia", subject_options)
-    selected_tech = st.sidebar.multiselect("Tecnologías", technologies)
+    selected_tech = st.sidebar.multiselect("Herramientas y métodos", technologies)
     featured_only = st.sidebar.checkbox("Solo destacados")
     query = st.sidebar.text_input("Buscar", placeholder="Ej. Python, laboratorio, energía...")
 
@@ -190,7 +190,7 @@ def render_metrics(data: dict, projects: list[dict], technologies: list[str]) ->
         <div class="metric-row">
             <div class="metric-box"><strong>{len(data.get("subjects", []))}</strong><span>Materias</span></div>
             <div class="metric-box"><strong>{len(projects)}</strong><span>Proyectos</span></div>
-            <div class="metric-box"><strong>{len(technologies)}</strong><span>Tecnologías y recursos</span></div>
+            <div class="metric-box"><strong>{len(technologies)}</strong><span>Herramientas y métodos</span></div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -249,7 +249,7 @@ def render_detail(project: dict) -> None:
         st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
         st.write(body)
 
-    st.markdown('<div class="detail-section"><h4>Tecnologías utilizadas</h4></div>', unsafe_allow_html=True)
+    st.markdown('<div class="detail-section"><h4>Herramientas y métodos</h4></div>', unsafe_allow_html=True)
     st.write(" ".join(f"`{tech}`" for tech in project.get("technologies", [])))
 
     st.markdown('<div class="detail-section"><h4>Recursos disponibles</h4></div>', unsafe_allow_html=True)
