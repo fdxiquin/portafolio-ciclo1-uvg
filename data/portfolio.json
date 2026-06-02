@@ -3,7 +3,7 @@
     "title": "Portafolio Ciclo 1 2026",
     "owner": "Daniel Fernando Xiquin Tezén",
     "subtitle": "Proyectos universitarios seleccionados",
-    "privacy_note": "Versión pública sin carné, nombres de terceros, entrevistas identificables ni datos sensibles."
+    "privacy_note": "Portafolio público: se omiten datos personales, carnés y contenidos no autorizados."
   },
   "subjects": [
     {
@@ -50,8 +50,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": true
         },
         {
           "id": "lab-3",
@@ -86,8 +85,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         },
         {
           "id": "tbl2",
@@ -127,7 +125,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": "Se omitieron nombres de integrantes y datos personales del equipo; se describe solo el rol del autor y el resultado académico."
         },
         {
           "id": "uso-de-pandas-y-streamlit",
@@ -168,8 +166,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         }
       ]
     },
@@ -207,7 +204,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": "Se presenta como síntesis académica sin nombres de integrantes ni datos personales del equipo."
         },
         {
           "id": "informe-13",
@@ -241,8 +238,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         },
         {
           "id": "informe-2",
@@ -276,8 +272,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         },
         {
           "id": "informe-11",
@@ -312,8 +307,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         }
       ]
     },
@@ -358,8 +352,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         },
         {
           "id": "booktrailer",
@@ -395,8 +388,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": true
         },
         {
           "id": "penel-artemis-ii",
@@ -435,7 +427,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": "Se omitieron nombres de integrantes; se conserva el enfoque académico, el tema investigado y el rol del autor."
         }
       ]
     },
@@ -478,8 +470,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         },
         {
           "id": "proyecto-integrador",
@@ -556,7 +547,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": "Se omitieron nombres de participantes, datos biométricos crudos y cualquier información sensible del laboratorio NeuroLab."
         },
         {
           "id": "video-juego-con-geenfoot",
@@ -621,8 +612,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": true
         }
       ]
     },
@@ -669,8 +659,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         }
       ]
     },
@@ -713,8 +702,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         },
         {
           "id": "proyecto-final",
@@ -756,7 +744,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": "Se omitieron nombres de integrantes y datos personales del equipo; se conserva la descripción pública del prototipo y del póster."
         },
         {
           "id": "practica-energia-en-la-comida-chatarra",
@@ -803,8 +791,7 @@
               "caption": "Visual resumen"
             }
           ],
-          "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "featured": false
         }
       ]
     }
