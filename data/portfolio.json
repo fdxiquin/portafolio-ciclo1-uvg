@@ -17,7 +17,7 @@
           "short_description": "Exploración de un conjunto de datos de videojuegos para encontrar patrones de precio, género, reseñas, descuentos y actividad de jugadores.",
           "introduction": "Este proyecto convirtió una tabla grande en preguntas claras: qué juegos destacan, cómo se distribuyen los géneros y qué señales comerciales ayudan a entender el comportamiento de una plataforma digital. El trabajo muestra el primer paso hacia una mentalidad de análisis de datos: ordenar variables y convertir números en lectura útil.",
           "reason": "Se realizó para practicar análisis exploratorio con Pandas usando un CSV realista de juegos populares publicados en Steam entre 2024 y 2026.",
-          "authors": "Autor del portafolio. Versión pública sin carné ni datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "Python",
             "pandas",
@@ -58,7 +58,7 @@
           "short_description": "Sistema de consola para registrar, buscar, eliminar e intercambiar libros dentro de un club.",
           "introduction": "La Biblioteca Viajera transforma una idea cotidiana en un sistema funcional: libros que se mueven entre personas, historial de intercambio y disponibilidad. Es un proyecto pequeño, pero representa una habilidad grande: modelar la realidad con estructuras de datos.",
           "reason": "Se realizó para practicar diccionarios, funciones, validación de entradas y menús interactivos en Python.",
-          "authors": "Autor del portafolio. Versión pública sin carné ni datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "Python",
             "diccionarios",
@@ -93,7 +93,7 @@
           "short_description": "Proyecto grupal modular para orientar una elección de carrera a partir de intereses, habilidades y recursos informativos.",
           "introduction": "Este proyecto marcó un salto: de resolver ejercicios aislados a organizar una solución real por módulos. La idea fue construir una herramienta que no solo respondiera, sino que guiara una decisión importante con lógica, datos y enlaces de información.",
           "reason": "Se realizó para aplicar algoritmos, organización de código, investigación de requisitos y trabajo colaborativo en una solución con propósito académico.",
-          "authors": "Equipo de trabajo del curso. El autor del portafolio lideró la organización, estructura y entrega. Versión pública sin nombres de integrantes.",
+          "authors": "Equipo de trabajo del curso; participación del autor: organización, estructura y liderazgo de entrega.",
           "technologies": [
             "Python",
             "Streamlit",
@@ -133,7 +133,7 @@
           "short_description": "Dashboard interactivo para filtrar Pokémon por tipo, generación y estado legendario, con métricas y gráficas dinámicas.",
           "introduction": "Este ejercicio llevó el análisis de datos a una interfaz visual. En vez de ver solo una tabla, el usuario puede explorar, filtrar y observar cómo cambian las métricas en tiempo real.",
           "reason": "Se realizó para practicar Pandas con Streamlit y aprender a comunicar datos mediante una aplicación sencilla.",
-          "authors": "Autor del portafolio. Versión pública sin carné ni datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "Python",
             "pandas",
@@ -181,7 +181,7 @@
           "short_description": "Actividad de análisis interdisciplinario para resolver un problema integrando unidades del curso.",
           "introduction": "El caso integrador funcionó como una prueba de pensamiento científico: no bastaba recordar conceptos, había que conectarlos, interpretarlos y tomar decisiones frente a una situación concreta.",
           "reason": "Se realizó para evaluar aprendizajes acumulados, análisis crítico, toma de decisiones y trabajo en equipo.",
-          "authors": "Equipo de trabajo del curso. Versión pública sin datos personales.",
+          "authors": "Equipo de trabajo del curso.",
           "technologies": [
             "análisis de caso",
             "discusión académica",
@@ -211,7 +211,7 @@
           "short_description": "Registro de observaciones biológicas en un espacio de conservación y colección científica.",
           "introduction": "Este informe conecta la biología con la observación directa. Al visitar un jardín botánico, el aprendizaje deja de estar solo en el texto y aparece en la forma, el registro, la diversidad y la conservación.",
           "reason": "Se realizó para observar especies vegetales, registrar información y comprender el valor de las colecciones biológicas.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "observación científica",
             "registro de campo",
@@ -244,7 +244,7 @@
           "short_description": "Práctica para identificar macromoléculas mediante observación, pruebas y comparación de resultados.",
           "introduction": "Este informe muestra cómo una muestra puede contar una historia química. Las pruebas de macromoléculas permiten reconocer patrones y conectar reacciones visibles con componentes biológicos.",
           "reason": "Se realizó para practicar análisis químico de biomoléculas y registrar resultados en cuadros comparativos.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "análisis químico",
             "macromoléculas",
@@ -277,7 +277,7 @@
           "short_description": "Informe sobre técnicas de biología molecular, preparación de gel, carga en pozos e interpretación de resultados.",
           "introduction": "Este trabajo acercó el lenguaje de la biotecnología a una práctica concreta. Preparar un gel, comprender la electroforesis e interpretar resultados simulados permite ver cómo la evidencia molecular apoya una conclusión científica.",
           "reason": "Se realizó para practicar técnica de laboratorio y comprender cómo se preparan e interpretan muestras en procesos de biología molecular.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "biotecnología",
             "electroforesis",
@@ -318,7 +318,7 @@
           "short_description": "Artículo de opinión sobre los riesgos de crear software con IA sin criterio técnico ni comprensión del código.",
           "introduction": "Este proyecto usa la escritura como herramienta de postura. La idea central es clara: la IA puede acelerar, pero no reemplaza el criterio. Crear sin entender puede producir soluciones frágiles, sesgadas o difíciles de mantener.",
           "reason": "Se realizó para construir una opinión argumentada, respaldarla con investigación y mejorar el proceso de redacción, revisión y presentación profesional.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "redacción académica",
             "investigación",
@@ -355,7 +355,7 @@
           "short_description": "Video creado en Canva para presentar de forma atractiva la comprensión de una obra literaria.",
           "introduction": "El booktrailer convirtió lectura en experiencia audiovisual. En lugar de resumir un libro de forma tradicional, el proyecto buscó despertar interés mediante ritmo, imagen, voz y emoción.",
           "reason": "Se realizó para demostrar comprensión lectora y explorar herramientas digitales de comunicación creativa.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "Canva",
             "edición de video",
@@ -390,7 +390,7 @@
           "short_description": "Investigación grupal y presentación tipo panel sobre la misión Artemis II y su contexto científico, tecnológico e histórico.",
           "introduction": "Este proyecto fue una experiencia de comunicación en vivo: investigar, organizar fuentes, construir un informe y sostener una conversación académica frente a una audiencia. El tema Artemis II permitió hablar de exploración espacial desde varias miradas.",
           "reason": "Se realizó para practicar investigación, organización de información, exposición oral, moderación y conexión dinámica entre subtemas.",
-          "authors": "Equipo de trabajo del curso. El autor del portafolio participó como moderador del panel. Versión pública sin nombres de integrantes.",
+          "authors": "Equipo de trabajo del curso; participación del autor: moderador del panel.",
           "technologies": [
             "investigación académica",
             "panel oral",
@@ -435,7 +435,7 @@
           "short_description": "Aplicación móvil desarrollada con MIT App Inventor para explorar interacción, sonido e interfaz.",
           "introduction": "Este proyecto fue una entrada directa al diseño de aplicaciones: botones, sonidos y experiencia de usuario. La programación por bloques permitió concentrarse en la lógica de interacción y en cómo una idea se convierte en una app usable.",
           "reason": "Se realizó para practicar desarrollo móvil inicial con App Inventor y comprender la relación entre interfaz, eventos y respuesta sonora.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "MIT App Inventor",
             "diseño de interfaz",
@@ -470,7 +470,7 @@
           "short_description": "Proyecto que combinó prototipado 3D, guía de ensamblaje y análisis académico de métricas biométricas en un entorno controlado.",
           "introduction": "Este proyecto une ingeniería, diseño y datos. La construcción de una pirámide por piezas sirvió como reto cognitivo; el componente NeuroLab permitió pensar cómo se puede observar el esfuerzo, la atención y la respuesta fisiológica sin convertir datos sensibles en exposición pública.",
           "reason": "Se realizó para integrar habilidades de investigación, prototipado, documentación técnica, empatía con usuarios y análisis de datos biométricos con responsabilidad.",
-          "authors": "Equipo de trabajo del curso. Versión pública sin nombres de participantes ni datos biométricos crudos.",
+          "authors": "Equipo de trabajo del curso.",
           "technologies": [
             "impresión 3D",
             "HTML",
@@ -545,7 +545,7 @@
           "short_description": "Videojuego en Java/Greenfoot inspirado en mecánicas de vuelo, obstáculos, puntaje y fin de partida.",
           "introduction": "Flappy Cat es una práctica de programación convertida en juego. Detrás de cada salto hay eventos, física simple, colisiones, sonidos, actores y estados del mundo.",
           "reason": "Se realizó para aprender programación orientada a objetos, ciclos de juego, detección de colisiones y manejo de recursos multimedia.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "Java",
             "Greenfoot",
@@ -615,7 +615,7 @@
           "short_description": "Síntesis del aprendizaje matemático del ciclo: funciones, gráficas, modelos, trigonometría y razonamiento.",
           "introduction": "Aunque no fue un proyecto final tradicional, este apartado cuenta una transformación importante: pasar de resolver ejercicios a interpretar comportamiento matemático. Pre-cálculo fortaleció la forma de leer problemas, gráficas y modelos.",
           "reason": "Se realizó para documentar el aprendizaje acumulado del curso y su relación con futuros cursos como Cálculo y Física.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "álgebra",
             "funciones",
@@ -662,7 +662,7 @@
           "short_description": "Práctica de formación y observación de cristales para comprender condiciones de crecimiento y estructura.",
           "introduction": "El crecimiento de cristales convierte una sustancia común en evidencia visual de orden molecular. La práctica permitió observar cómo variables aparentemente pequeñas pueden cambiar el resultado final.",
           "reason": "Se realizó para comprender el proceso de cristalización y analizar cómo condiciones como vibración o temperatura afectan la formación de cristales.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "química experimental",
             "cristalización",
@@ -696,7 +696,7 @@
           "short_description": "Poster científico y prototipo experimental relacionado con energía alternativa de bajo costo.",
           "introduction": "Este proyecto llevó la química a una pregunta con impacto: cómo pensar energía alternativa desde materiales accesibles y principios electroquímicos. El prototipo y el póster muestran ciencia aplicada, no solo teoría.",
           "reason": "Se realizó como cierre del curso de Química General para integrar hipótesis, objetivos, experimento y comunicación científica.",
-          "authors": "Equipo de trabajo del curso. Versión pública sin nombres ni datos personales.",
+          "authors": "Equipo de trabajo del curso.",
           "technologies": [
             "química general",
             "electroquímica",
@@ -738,7 +738,7 @@
           "short_description": "Práctica de calorimetría para estimar la energía liberada por combustión de un alimento y compararla con el empaque.",
           "introduction": "Esta práctica hizo visible una idea poderosa: los alimentos almacenan energía química. Al quemar una muestra y medir el cambio de temperatura, la energía deja de ser un número de etiqueta y se vuelve experimento.",
           "reason": "Se realizó para cuantificar energía liberada por combustión, estimar contenido energético y comparar resultados experimentales con datos del producto.",
-          "authors": "Autor del portafolio. Versión pública sin datos personales.",
+          "authors": "Autor del portafolio.",
           "technologies": [
             "calorimetría",
             "combustión",
