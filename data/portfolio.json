@@ -21,7 +21,6 @@
           "technologies": [
             "Python",
             "pandas",
-            "CSV",
             "análisis exploratorio de datos"
           ],
           "results": "Se exploraron dimensiones, tipos de datos, primeras filas, precios máximos y mínimos, reseñas, conteos por género, descuentos, juegos con más dueños, juegos con reseñas altas y picos de jugadores en 24 horas.",
@@ -51,7 +50,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "lab-3",
@@ -87,7 +86,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "tbl2",
@@ -100,8 +99,7 @@
             "Python",
             "Streamlit",
             "módulos",
-            "diccionarios",
-            "PDF/DOCX como documentación"
+            "diccionarios"
           ],
           "results": "Se desarrolló una propuesta de programa que recopila datos del estudiante, evalúa intereses y genera recomendaciones de carreras con recursos para ampliar información.",
           "learnings": "Aprendí a liderar una entrega técnica, dividir responsabilidades, definir variables antes de programar y validar entradas para evitar respuestas incorrectas.",
@@ -127,7 +125,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "uso-de-pandas-y-streamlit",
@@ -140,7 +138,6 @@
             "Python",
             "pandas",
             "Streamlit",
-            "CSV",
             "gráficas interactivas"
           ],
           "results": "Se creó una página con filtros por tipo, generación y legendarios, métricas de conteo, tabla filtrada y gráficas por tipo y generación.",
@@ -169,7 +166,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         }
       ]
     },
@@ -188,8 +185,7 @@
           "technologies": [
             "análisis de caso",
             "discusión académica",
-            "trabajo colaborativo",
-            "recurso visual JPEG"
+            "trabajo colaborativo"
           ],
           "results": "Se abordó un problema con varias preguntas, integrando conceptos de diferentes unidades para construir una respuesta razonada.",
           "learnings": "Aprendí a organizar evidencia, distinguir datos importantes y justificar decisiones en equipo.",
@@ -207,7 +203,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "informe-13",
@@ -219,7 +215,6 @@
           "technologies": [
             "observación científica",
             "registro de campo",
-            "PDF",
             "taxonomía básica"
           ],
           "results": "Se registraron observaciones sobre plantas y orquídeas, incluyendo la importancia de datos como ubicación, recolecta, colector y validación de hallazgos.",
@@ -242,7 +237,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "informe-2",
@@ -254,8 +249,7 @@
           "technologies": [
             "análisis químico",
             "macromoléculas",
-            "registro de resultados",
-            "PDF"
+            "registro de resultados"
           ],
           "results": "Se completaron cuadros de resultados y comparaciones de pruebas, observando cambios que ayudan a identificar distintos tipos de moléculas biológicas.",
           "learnings": "Aprendí a interpretar evidencias visuales, comparar resultados y cuidar la precisión en el registro experimental.",
@@ -277,7 +271,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "informe-11",
@@ -290,8 +284,7 @@
             "biotecnología",
             "electroforesis",
             "microscopía",
-            "análisis de caso",
-            "PDF"
+            "análisis de caso"
           ],
           "results": "Se interpretaron resultados simulados, se compararon hipótesis con evidencias y se registraron observaciones de bacterias al microscopio.",
           "learnings": "Aprendí a conectar procedimiento, hipótesis y evidencia; también a tratar los resultados como parte de una cadena de razonamiento.",
@@ -313,7 +306,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         }
       ]
     },
@@ -334,7 +327,6 @@
             "investigación",
             "corrección asistida",
             "PowerPoint",
-            "PDF",
             "herramientas de IA usadas con criterio"
           ],
           "results": "Se desarrolló un artículo final, una presentación y evidencia del proceso desde idea, estructura, borradores, correcciones y versión final.",
@@ -359,7 +351,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "booktrailer",
@@ -372,8 +364,7 @@
             "Canva",
             "edición de video",
             "ElevenLabs",
-            "edición de imagen",
-            "MP4"
+            "edición de imagen"
           ],
           "results": "Se produjo un video final diseñado para invitar al público a interesarse por el libro leído.",
           "learnings": "Aprendí a transformar una interpretación literaria en narrativa audiovisual y a usar recursos de edición para comunicar con intención.",
@@ -396,7 +387,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "penel-artemis-ii",
@@ -409,7 +400,6 @@
             "investigación académica",
             "panel oral",
             "búsqueda bibliográfica",
-            "PDF",
             "presentación"
           ],
           "results": "Se preparó un informe de investigación, una dinámica de panel, referencias y una presentación ante compañeros del curso.",
@@ -435,7 +425,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         }
       ]
     },
@@ -453,7 +443,6 @@
           "authors": "Autor del portafolio. Versión pública sin datos personales.",
           "technologies": [
             "MIT App Inventor",
-            "AIA",
             "diseño de interfaz",
             "eventos de usuario"
           ],
@@ -479,7 +468,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "proyecto-integrador",
@@ -490,12 +479,10 @@
           "authors": "Equipo de trabajo del curso. Versión pública sin nombres de participantes ni datos biométricos crudos.",
           "technologies": [
             "impresión 3D",
-            "STL",
             "HTML",
             "documentación técnica",
             "NeuroLab",
-            "análisis de métricas biométricas",
-            "PDF/DOCX"
+            "análisis de métricas biométricas"
           ],
           "results": "Se documentó el uso de una pirámide tipo rompecabezas, se generó una guía de ensamblaje y se trabajó con explicaciones de métricas biométricas. La versión pública conserva el proceso y omite datos personales o sensibles.",
           "learnings": "Aprendí a equilibrar creatividad técnica con ética de datos: no todo lo que se puede medir debe publicarse completo.",
@@ -556,7 +543,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "video-juego-con-geenfoot",
@@ -568,10 +555,7 @@
           "technologies": [
             "Java",
             "Greenfoot",
-            "programación orientada a objetos",
-            "imágenes PNG/JPEG",
-            "sonidos MP3",
-            "MP4"
+            "programación orientada a objetos"
           ],
           "results": "Se creó un mundo de 600x400 con personaje, tuberías, puntaje, sonidos de vuelo/colisión y pantalla de Game Over.",
           "learnings": "Aprendí a pensar en objetos que actúan dentro de un mundo, a separar clases y a conectar interacción del usuario con respuesta visual y sonora.",
@@ -622,7 +606,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         }
       ]
     },
@@ -670,7 +654,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         }
       ]
     },
@@ -689,9 +673,7 @@
           "technologies": [
             "química experimental",
             "cristalización",
-            "observación",
-            "PDF",
-            "PNG"
+            "observación"
           ],
           "results": "Se observaron cristales y se concluyó que factores como vibraciones o temperatura inestable afectaron el resultado.",
           "learnings": "Aprendí que en química experimental el ambiente importa: controlar condiciones puede ser tan importante como seguir el procedimiento.",
@@ -714,7 +696,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "proyecto-final",
@@ -756,7 +738,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         },
         {
           "id": "practica-energia-en-la-comida-chatarra",
@@ -769,9 +751,7 @@
             "calorimetría",
             "combustión",
             "medición de temperatura",
-            "análisis de error",
-            "PDF",
-            "fotografía de laboratorio"
+            "análisis de error"
           ],
           "results": "Se obtuvieron datos energéticos, se compararon con el empaque y se identificó error experimental asociado a pérdidas de calor y condiciones del montaje.",
           "learnings": "Aprendí a conectar medición, cálculo y discusión de error; también a reconocer que un experimento puede cumplir su propósito aunque no sea perfecto.",
@@ -804,7 +784,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
+          "privacy_note": ""
         }
       ]
     }
