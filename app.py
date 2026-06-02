@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 import streamlit as st
 
 from utils.data_loader import APP_DIR, all_technologies, flatten_projects, load_portfolio, validation_warnings
@@ -188,7 +190,7 @@ def render_metrics(data: dict, projects: list[dict], technologies: list[str]) ->
         <div class="metric-row">
             <div class="metric-box"><strong>{len(data.get("subjects", []))}</strong><span>Materias</span></div>
             <div class="metric-box"><strong>{len(projects)}</strong><span>Proyectos</span></div>
-            <div class="metric-box"><strong>{len(technologies)}</strong><span>Tecnologías</span></div>
+            <div class="metric-box"><strong>{len(technologies)}</strong><span>Tecnologías, métodos y recursos</span></div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -227,10 +229,27 @@ def render_gallery(project: dict) -> None:
 
 
 def render_text_section(title: str, body: str) -> None:
-    if not body:
+    if not str(body).strip():
         return
     st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
     st.write(body)
+
+
+def render_list_section(title: str, items: list[str]) -> None:
+    values = [item for item in items if str(item).strip()]
+    if not values:
+        return
+    st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
+    for item in values:
+        st.write(f"- {item}")
+
+
+def render_tag_section(title: str, tags: list[str]) -> None:
+    values = [tag for tag in tags if str(tag).strip()]
+    if not values:
+        return
+    st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
+    st.write(" ".join(f"`{tag}`" for tag in values))
 
 
 def render_detail(project: dict) -> None:
@@ -250,20 +269,13 @@ def render_detail(project: dict) -> None:
         ("Resultados", project.get("results", "")),
         ("Aprendizajes", project.get("learnings", "")),
         ("Conclusiones", project.get("conclusions", "")),
+        ("Agradecimientos", project.get("thanks", "")),
     ]
     for title, body in sections:
         render_text_section(title, body)
 
-    technologies = project.get("technologies", [])
-    if technologies:
-        st.markdown('<div class="detail-section"><h4>Tecnologías utilizadas</h4></div>', unsafe_allow_html=True)
-        st.write(" ".join(f"`{tech}`" for tech in technologies))
-
-    resources = project.get("resources", [])
-    if resources:
-        st.markdown('<div class="detail-section"><h4>Recursos disponibles</h4></div>', unsafe_allow_html=True)
-        for resource in resources:
-            st.write(f"- {resource}")
+    render_tag_section("Tecnologías, métodos y recursos", project.get("technologies", []))
+    render_list_section("Recursos disponibles", project.get("resources", []))
 
     st.markdown('<div class="detail-section"><h4>Galería pública</h4></div>', unsafe_allow_html=True)
     render_gallery(project)
@@ -324,6 +336,9 @@ def main() -> None:
 
     with tab_detail:
         render_detail(selected_project)
+
+    if site.get("final_note"):
+        st.markdown(f'<div class="privacy-note">{site["final_note"]}</div>', unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
