@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import Any
 
 
-REQUIRED_SITE_FIELDS = {"title", "owner", "subtitle", "privacy_note"}
-REQUIRED_SUBJECT_FIELDS = {"id", "name", "description", "projects"}
+REQUIRED_SITE_FIELDS = {"title", "owner", "subtitle", "privacy_note", "thanks"}
+REQUIRED_SUBJECT_FIELDS = {"id", "name", "description", "thanks", "projects"}
 REQUIRED_PROJECT_FIELDS = {
     "id",
     "name",
@@ -17,7 +17,6 @@ REQUIRED_PROJECT_FIELDS = {
     "results",
     "learnings",
     "conclusions",
-    "thanks",
     "resources",
     "media",
     "featured",

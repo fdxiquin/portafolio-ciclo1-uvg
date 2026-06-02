@@ -3,7 +3,8 @@
     "title": "Portafolio Ciclo 1 2026",
     "owner": "Daniel Fernando Xiquin Tezén",
     "subtitle": "Proyectos universitarios seleccionados",
-    "privacy_note": "Portafolio público: se omiten datos personales, carnés y contenidos no autorizados."
+    "privacy_note": "Portafolio público: se omiten datos personales, carnés y contenidos no autorizados.",
+    "thanks": "Agradezco este ciclo porque cada curso aportó algo distinto a mi formación: algunos proyectos me exigieron programar y resolver problemas, otros me hicieron escribir mejor, observar con más cuidado o explicar ideas con más claridad. También agradezco a los docentes, compañeros y espacios de laboratorio que hicieron posible trabajar con evidencias reales, cometer errores, corregirlos y convertirlos en aprendizaje para este portafolio."
   },
   "subjects": [
     {
@@ -25,9 +26,8 @@
             "análisis exploratorio de datos"
           ],
           "results": "Se exploraron dimensiones, tipos de datos, primeras filas, precios máximos y mínimos, reseñas, conteos por género, descuentos, juegos con más dueños, juegos con reseñas altas y picos de jugadores en 24 horas.",
-          "learnings": "Aprendí a leer un dataset desde una pregunta, no solo desde una tabla. También reforcé filtros, ordenamientos, conteos y selección de columnas relevantes.",
+          "learnings": "Al inicio me enfoqué mucho en obtener resultados rápidos, pero el proyecto me obligó a ordenar mejor las preguntas antes de tocar la tabla. Entendí que filtrar, contar y graficar solo tiene sentido cuando uno sabe qué quiere explicar.",
           "conclusions": "El proyecto evidencia que los datos de videojuegos pueden analizarse como un mercado: combinan popularidad, precio, recepción del público y actividad reciente.",
-          "thanks": "Agradezco al curso por introducir el análisis de datos con ejercicios aplicados.",
           "resources": [
             "Steam.py",
             "steam_games_2426.csv",
@@ -66,9 +66,8 @@
             "entrada por consola"
           ],
           "results": "El programa permite registrar libros, eliminarlos, buscar por autor, intercambiar ejemplares, consultar disponibles y mantener historial básico de propietarios.",
-          "learnings": "Aprendí a separar un problema en funciones pequeñas, validar datos obligatorios y mantener información relacionada dentro de diccionarios anidados.",
+          "learnings": "Me costó pensar en todos los casos que un usuario podía ingresar, especialmente cuando faltaban datos o se repetía información. Aprendí que un programa sencillo también necesita orden, validaciones y funciones claras para no volverse confuso.",
           "conclusions": "El laboratorio muestra que una solución clara no necesita ser compleja: necesita estructura, reglas y una experiencia de uso comprensible.",
-          "thanks": "Agradezco la oportunidad de practicar programación con un caso cercano a la vida real.",
           "resources": [
             "biblioteca_viajera.py",
             "Laboratorio3.pdf"
@@ -102,9 +101,8 @@
             "validación de entradas"
           ],
           "results": "Se desarrolló una propuesta de programa que recopila datos del estudiante, evalúa intereses y genera recomendaciones de carreras con recursos para ampliar información.",
-          "learnings": "Aprendí a liderar una entrega técnica, dividir responsabilidades, definir variables antes de programar y validar entradas para evitar respuestas incorrectas.",
+          "learnings": "Este proyecto me mostró que liderar no es solo repartir tareas: también es revisar que las partes conecten y que el equipo entienda la misma idea. Aprendí a valorar más la planificación antes de programar, porque corregir una mala estructura al final toma mucho más tiempo.",
           "conclusions": "El valor principal no fue solo el código: fue aprender a pensar como equipo, diseñar antes de ejecutar y convertir información dispersa en una experiencia útil.",
-          "thanks": "Agradezco al equipo y al curso por permitir una experiencia de liderazgo técnico temprano.",
           "resources": [
             "CONTEXTO.txt",
             "TBL2 3DE examen.pdf",
@@ -142,9 +140,8 @@
             "visualización de datos"
           ],
           "results": "Se creó una página con filtros por tipo, generación y legendarios, métricas de conteo, tabla filtrada y gráficas por tipo y generación.",
-          "learnings": "Aprendí que una buena visualización depende tanto del dato como de la interacción: filtrar bien cambia la forma de entender el conjunto.",
+          "learnings": "Me di cuenta de que mostrar datos en una app no consiste solo en poner gráficas. Tuve que pensar qué filtros realmente ayudaban a explorar y cuáles solo ocupaban espacio sin aportar claridad.",
           "conclusions": "El proyecto demuestra la transición de script a producto: una misma base de datos se vuelve más poderosa cuando el usuario puede explorarla.",
-          "thanks": "Agradezco al curso por introducir herramientas modernas de visualización rápida.",
           "resources": [
             "mostrar_pandas_con_filtro.py",
             "pokemon_data.csv"
@@ -168,7 +165,8 @@
           ],
           "featured": false
         }
-      ]
+      ],
+      "thanks": "Agradezco esta materia porque me ayudó a perderle miedo a construir soluciones desde cero. No todos los ejercicios salieron perfectos al primer intento, pero cada error en código, estructura o validación me obligó a pensar mejor antes de programar y a entender que la lógica también se entrena con paciencia."
     },
     {
       "id": "ciencias_vida",
@@ -188,9 +186,8 @@
             "trabajo colaborativo"
           ],
           "results": "Se abordó un problema con varias preguntas, integrando conceptos de diferentes unidades para construir una respuesta razonada.",
-          "learnings": "Aprendí a organizar evidencia, distinguir datos importantes y justificar decisiones en equipo.",
+          "learnings": "En este caso integrador aprendí que trabajar en equipo también implica aceptar que no todos interpretamos la información de la misma manera. Me ayudó a practicar cómo defender una respuesta sin perder de vista la evidencia.",
           "conclusions": "Este tipo de actividad muestra que la ciencia se entiende mejor cuando se usa para explicar situaciones, no solo para memorizar definiciones.",
-          "thanks": "Agradezco al curso por proponer casos que obligan a pensar con criterio y colaboración.",
           "resources": [
             "CONTEXTO.txt",
             "Caso integrador.jpeg"
@@ -218,9 +215,8 @@
             "taxonomía básica"
           ],
           "results": "Se registraron observaciones sobre plantas y orquídeas, incluyendo la importancia de datos como ubicación, recolecta, colector y validación de hallazgos.",
-          "learnings": "Aprendí que una colección científica no es solo una exhibición: es memoria, evidencia y herramienta para estudiar biodiversidad.",
+          "learnings": "La visita me hizo prestar más atención a detalles que normalmente pasaría por alto. Entendí que observar en biología no es solo mirar, sino registrar con intención y reconocer por qué una colección tiene valor científico.",
           "conclusions": "La actividad fortaleció mi atención al detalle y mi comprensión de cómo se documenta la vida vegetal para conservarla y estudiarla.",
-          "thanks": "Agradezco los espacios de aprendizaje que permiten observar la biología fuera del aula.",
           "resources": [
             "Informe 13.pdf"
           ],
@@ -251,9 +247,8 @@
             "registro experimental"
           ],
           "results": "Se completaron cuadros de resultados y comparaciones de pruebas, observando cambios que ayudan a identificar distintos tipos de moléculas biológicas.",
-          "learnings": "Aprendí a interpretar evidencias visuales, comparar resultados y cuidar la precisión en el registro experimental.",
+          "learnings": "Esta práctica me hizo notar que los resultados pueden confundirse si uno no registra bien lo que observa. Aprendí a tomar más en serio los cuadros, las comparaciones y los pequeños cambios visibles durante el procedimiento.",
           "conclusions": "La práctica refuerza que la biología también se construye desde la química: observar, comparar y justificar son partes del mismo proceso.",
-          "thanks": "Agradezco al laboratorio por permitir practicar identificación de biomoléculas con procedimientos concretos.",
           "resources": [
             "Informe 2.pdf"
           ],
@@ -285,9 +280,8 @@
             "análisis de caso"
           ],
           "results": "Se interpretaron resultados simulados, se compararon hipótesis con evidencias y se registraron observaciones de bacterias al microscopio.",
-          "learnings": "Aprendí a conectar procedimiento, hipótesis y evidencia; también a tratar los resultados como parte de una cadena de razonamiento.",
+          "learnings": "El tema fue retador porque varias partes del procedimiento dependían de entender conceptos que no se ven a simple vista. Aprendí a no tratar el laboratorio como una lista de pasos, sino como una forma de comprobar ideas con evidencia.",
           "conclusions": "El informe muestra que la biotecnología exige cuidado técnico y pensamiento crítico: una conclusión vale por la calidad del proceso que la sostiene.",
-          "thanks": "Agradezco la experiencia de laboratorio y el acercamiento a técnicas usadas en investigación biológica.",
           "resources": [
             "Informe_11.pdf"
           ],
@@ -305,7 +299,8 @@
           ],
           "featured": false
         }
-      ]
+      ],
+      "thanks": "Agradezco esta materia porque me sacó de una forma pasiva de aprender ciencia. Las prácticas, observaciones e informes me hicieron poner más atención a los detalles, registrar mejor lo que veía y aceptar que una buena explicación científica nace de observar, comparar y justificar con cuidado."
     },
     {
       "id": "comunicacion",
@@ -327,9 +322,8 @@
             "IA generativa"
           ],
           "results": "Se desarrolló un artículo final, una presentación y evidencia del proceso desde idea, estructura, borradores, correcciones y versión final.",
-          "learnings": "Aprendí a defender una postura con respaldo, usar IA como apoyo sin perder juicio propio y revisar el texto para hacerlo más claro y responsable.",
+          "learnings": "Este artículo me obligó a revisar mi propia forma de usar IA. Aprendí que una idea puede sonar convincente, pero si no se entiende ni se sostiene con argumentos, termina siendo débil.",
           "conclusions": "El proyecto demuestra que comunicar tecnología también es una responsabilidad: no basta usar herramientas nuevas, hay que explicar sus límites.",
-          "thanks": "Agradezco al curso por impulsar una comunicación crítica sobre temas tecnológicos actuales.",
           "resources": [
             "CONTEXTO.txt",
             "resultado_final.pdf",
@@ -363,9 +357,8 @@
             "edición de imagen"
           ],
           "results": "Se produjo un video final diseñado para invitar al público a interesarse por el libro leído.",
-          "learnings": "Aprendí a transformar una interpretación literaria en narrativa audiovisual y a usar recursos de edición para comunicar con intención.",
+          "learnings": "Me costó pasar de una lectura a un video sin convertirlo en un resumen plano. Aprendí que elegir imágenes, voz y ritmo también es una forma de interpretar una obra.",
           "conclusions": "El proyecto muestra que la comunicación efectiva también puede ser visual, sonora y creativa.",
-          "thanks": "Agradezco al curso por permitir explorar formatos distintos al texto académico tradicional.",
           "resources": [
             "boocktrailer.mp4",
             "CONTEXTO.txt"
@@ -398,9 +391,8 @@
             "presentación oral"
           ],
           "results": "Se preparó un informe de investigación, una dinámica de panel, referencias y una presentación ante compañeros del curso.",
-          "learnings": "Aprendí a moderar, conectar ideas en tiempo real, cuidar el ritmo de una conversación y convertir investigación en experiencia para el público.",
+          "learnings": "Moderar el panel me hizo ver que una presentación no siempre sale exactamente como se planea. Aprendí a escuchar, retomar ideas del grupo y mantener el hilo sin depender solo de un guion.",
           "conclusions": "El panel demuestra que comunicar ciencia requiere claridad, escucha y estructura: el conocimiento impacta más cuando se vuelve conversación.",
-          "thanks": "Agradezco al equipo y al curso por una experiencia exigente de investigación y comunicación pública.",
           "resources": [
             "Investigación_Artemis_II_Final.pdf",
             "Panel_Artemis_II_organizado.pdf",
@@ -422,7 +414,8 @@
           "featured": false,
           "privacy_note": "Se omitieron nombres de integrantes; se conserva el enfoque académico, el tema investigado y el rol del autor."
         }
-      ]
+      ],
+      "thanks": "Agradezco esta materia porque me recordó que saber algo no sirve de mucho si no puedo explicarlo bien. Los proyectos de escritura, video y panel me ayudaron a ordenar ideas, escuchar otras perspectivas y comunicar con más intención, incluso cuando el formato era diferente al texto académico tradicional."
     },
     {
       "id": "intro_ingenieria",
@@ -442,9 +435,8 @@
             "eventos de usuario"
           ],
           "results": "Se construyó una aplicación musical con pantalla funcional y archivos AIA de proyecto.",
-          "learnings": "Aprendí que una app no es solo código: también es una secuencia de decisiones sobre interacción, claridad visual y respuesta inmediata.",
+          "learnings": "Este proyecto me ayudó a entender que una app puede fallar aunque la lógica básica funcione, si la interacción no es clara. Aprendí a fijarme más en lo que el usuario espera al tocar un botón o escuchar una respuesta.",
           "conclusions": "El proyecto muestra una primera aproximación práctica al desarrollo móvil y a la creación de experiencias interactivas.",
-          "thanks": "Agradezco la oportunidad de experimentar con herramientas accesibles para crear aplicaciones.",
           "resources": [
             "Musica_Con_Apps.aia",
             "MyPiano_template_MS.aia",
@@ -479,9 +471,8 @@
             "análisis de métricas biométricas"
           ],
           "results": "Se documentó el uso de una pirámide tipo rompecabezas, se generó una guía de ensamblaje y se trabajó con explicaciones de métricas biométricas. La versión pública conserva el proceso y omite datos personales o sensibles.",
-          "learnings": "Aprendí a equilibrar creatividad técnica con ética de datos: no todo lo que se puede medir debe publicarse completo.",
+          "learnings": "Este proyecto me dejó una lección importante sobre responsabilidad. Fue interesante trabajar con prototipos y métricas, pero también entendí que no toda evidencia debe publicarse completa solo porque existe.",
           "conclusions": "El proyecto demuestra una visión más completa de ingeniería: construir, probar, documentar, analizar y proteger la información.",
-          "thanks": "Agradezco al equipo, al curso y a los espacios de laboratorio por permitir una experiencia integradora.",
           "resources": [
             "guia_ensamblaje.docx",
             "pyramid_guide_2.html",
@@ -553,9 +544,8 @@
             "recursos multimedia"
           ],
           "results": "Se creó un mundo de 600x400 con personaje, tuberías, puntaje, sonidos de vuelo/colisión y pantalla de Game Over.",
-          "learnings": "Aprendí a pensar en objetos que actúan dentro de un mundo, a separar clases y a conectar interacción del usuario con respuesta visual y sonora.",
+          "learnings": "Programar el juego me hizo ver que algo que parece simple en pantalla depende de muchas decisiones pequeñas. Aprendí a organizar objetos, colisiones y estados sin perder de vista cómo se siente jugarlo.",
           "conclusions": "El proyecto demuestra que programar un juego pequeño exige coordinar muchas piezas: lógica, recursos, estados y experiencia del jugador.",
-          "thanks": "Agradezco al curso por introducir programación mediante una experiencia lúdica y visible.",
           "resources": [
             "Flappy_Cat/*.java",
             "project.greenfoot",
@@ -602,7 +592,8 @@
           ],
           "featured": true
         }
-      ]
+      ],
+      "thanks": "Agradezco esta materia porque me permitió probar varias formas de hacer ingeniería: crear una app, programar un juego, documentar un prototipo y pensar en datos sensibles. Fue una materia importante porque conectó la creatividad técnica con la responsabilidad de diseñar algo que otras personas puedan usar o entender."
     },
     {
       "id": "precalculo",
@@ -624,9 +615,8 @@
             "trigonometría"
           ],
           "results": "Se consolidó una base de razonamiento numérico, gráfico y analítico, con énfasis en interpretar funciones y reconocer límites de modelos.",
-          "learnings": "Aprendí a observar crecimiento, decrecimiento, máximos, volatilidad, comportamiento exponencial y relaciones trigonométricas con más criterio.",
+          "learnings": "Pre-cálculo me exigió más constancia de la que esperaba. Aprendí que entender una gráfica o una función no es memorizar una forma, sino reconocer qué está pasando y cómo justificarlo.",
           "conclusions": "Este curso no dejó solo fórmulas; dejó una forma más ordenada y crítica de pensar problemas cuantitativos.",
-          "thanks": "Agradezco al curso por construir una base matemática necesaria para la ingeniería.",
           "resources": [
             "reflexion_precalculo.txt"
           ],
@@ -649,7 +639,8 @@
           ],
           "featured": false
         }
-      ]
+      ],
+      "thanks": "Agradezco esta materia porque me exigió constancia y una forma más ordenada de pensar. Aunque algunas partes fueron retadoras, me ayudó a ver que las matemáticas no son solo procedimientos, sino una base para interpretar modelos, gráficas y problemas que aparecerán en cursos futuros."
     },
     {
       "id": "quimica",
@@ -669,9 +660,8 @@
             "observación"
           ],
           "results": "Se observaron cristales y se concluyó que factores como vibraciones o temperatura inestable afectaron el resultado.",
-          "learnings": "Aprendí que en química experimental el ambiente importa: controlar condiciones puede ser tan importante como seguir el procedimiento.",
+          "learnings": "La práctica me mostró que seguir instrucciones no siempre garantiza un resultado perfecto. Aprendí que factores como tiempo, temperatura o movimiento pueden cambiar bastante lo que uno observa.",
           "conclusions": "La práctica muestra la relación entre estructura, tiempo y control experimental.",
-          "thanks": "Agradezco al laboratorio por permitir observar un fenómeno químico de forma tangible.",
           "resources": [
             "Cristales_NaCl_Lab9 Presentación.pdf",
             "Imagen1.png"
@@ -705,9 +695,8 @@
             "prototipo experimental"
           ],
           "results": "Se desarrolló un sistema experimental y un póster científico orientado a energía alternativa de bajo costo.",
-          "learnings": "Aprendí a comunicar un experimento en formato de póster, conectando objetivos, hipótesis, evidencia y aplicación.",
+          "learnings": "Este proyecto me ayudó a entender que comunicar ciencia obliga a escoger bien qué mostrar y qué explicar. No basta con tener un experimento; también hay que presentar la idea de forma clara y honesta.",
           "conclusions": "El proyecto muestra que la química puede abrir conversaciones sobre soluciones energéticas accesibles, siempre desde experimentación responsable.",
-          "thanks": "Agradezco al equipo y al curso por impulsar una entrega final aplicada.",
           "resources": [
             "Poster-científico.pdf",
             "fotografía del prototipo"
@@ -746,9 +735,8 @@
             "análisis de error"
           ],
           "results": "Se obtuvieron datos energéticos, se compararon con el empaque y se identificó error experimental asociado a pérdidas de calor y condiciones del montaje.",
-          "learnings": "Aprendí a conectar medición, cálculo y discusión de error; también a reconocer que un experimento puede cumplir su propósito aunque no sea perfecto.",
+          "learnings": "La práctica no dio una medición perfecta, y eso fue parte importante del aprendizaje. Entendí mejor por qué se analiza el error y por qué un resultado imperfecto todavía puede enseñar algo si se discute con cuidado.",
           "conclusions": "La práctica demuestra que la ciencia escolar se vuelve más fuerte cuando se analizan los límites del procedimiento, no solo el resultado final.",
-          "thanks": "Agradezco al laboratorio por permitir una práctica visual y memorable sobre energía química.",
           "resources": [
             "Informe_práctica_5.pdf",
             "fotografías del montaje"
@@ -777,7 +765,8 @@
           ],
           "featured": false
         }
-      ]
+      ],
+      "thanks": "Agradezco esta materia porque convirtió conceptos teóricos en experiencias visibles. Las prácticas y proyectos me ayudaron a entender que un experimento no se valora solo por obtener el resultado esperado, sino por registrar bien, analizar errores y comunicar lo aprendido con honestidad."
     }
   ]
 }

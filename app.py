@@ -127,6 +127,14 @@ def inject_styles() -> None:
             color: #184355;
             margin: 1rem 0;
         }
+        .thanks-note {
+            border-left: 4px solid var(--accent-2);
+            background: #fff6f0;
+            padding: .9rem 1rem;
+            border-radius: 6px;
+            color: #65402d;
+            margin: 1rem 0 1.4rem;
+        }
         @media (max-width: 800px) {
             .metric-row { grid-template-columns: 1fr; }
             .hero { padding: 1.4rem; }
@@ -163,7 +171,7 @@ def project_matches(project: dict, query: str) -> bool:
     return query.casefold() in haystack
 
 
-def filter_projects(projects: list[dict], subjects: list[dict], technologies: list[str]) -> list[dict]:
+def filter_projects(projects: list[dict], subjects: list[dict], technologies: list[str]) -> tuple[list[dict], str]:
     subject_options = ["Todas"] + [subject["name"] for subject in subjects]
     selected_subject = st.sidebar.selectbox("Materia", subject_options)
     selected_tech = st.sidebar.multiselect("Herramientas y métodos", technologies)
@@ -181,7 +189,21 @@ def filter_projects(projects: list[dict], subjects: list[dict], technologies: li
         if not project_matches(project, query):
             continue
         filtered.append(project)
-    return filtered
+    return filtered, selected_subject
+
+
+def render_thanks(data: dict, selected_subject: str) -> None:
+    if selected_subject == "Todas":
+        thanks = data.get("site", {}).get("thanks", "")
+    else:
+        subject = next(
+            (item for item in data.get("subjects", []) if item.get("name") == selected_subject),
+            {},
+        )
+        thanks = subject.get("thanks", "")
+
+    if thanks:
+        st.markdown(f'<div class="thanks-note"><strong>Agradecimientos</strong><br>{thanks}</div>', unsafe_allow_html=True)
 
 
 def render_metrics(data: dict, projects: list[dict], technologies: list[str]) -> None:
@@ -243,7 +265,6 @@ def render_detail(project: dict) -> None:
         ("Resultados", project.get("results", "")),
         ("Aprendizajes", project.get("learnings", "")),
         ("Conclusiones", project.get("conclusions", "")),
-        ("Agradecimientos", project.get("thanks", "")),
     ]
     for title, body in sections:
         st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
@@ -290,11 +311,12 @@ def main() -> None:
     render_metrics(data, projects, technologies)
 
     st.sidebar.title("Explorar portafolio")
-    filtered = filter_projects(projects, data.get("subjects", []), technologies)
+    filtered, selected_subject = filter_projects(projects, data.get("subjects", []), technologies)
     st.sidebar.caption(f"{len(filtered)} de {len(projects)} proyectos visibles")
 
     if not filtered:
         st.info("No hay proyectos que coincidan con los filtros actuales.")
+        render_thanks(data, selected_subject)
         return
 
     project_lookup = {f'{project["name"]} · {project["subject_name"]}': project for project in filtered}
@@ -315,6 +337,8 @@ def main() -> None:
 
     with tab_detail:
         render_detail(selected_project)
+
+    render_thanks(data, selected_subject)
 
 
 if __name__ == "__main__":
