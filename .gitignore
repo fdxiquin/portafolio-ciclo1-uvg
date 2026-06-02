@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+.venv/
+venv/
+env/
+.env
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+assets/**/*.mov
+assets/**/*.m4v
+assets/**/booktrailer_publico.mp4
