@@ -3,8 +3,7 @@
     "title": "Portafolio Ciclo 1 2026",
     "owner": "Daniel Fernando Xiquin Tezén",
     "subtitle": "Proyectos universitarios seleccionados",
-    "privacy_note": "Versión pública sin carné, nombres de terceros, entrevistas identificables ni datos sensibles.",
-    "final_note": "Este portafolio resume aprendizajes del primer ciclo universitario a través de proyectos, prácticas y reflexiones. La selección prioriza evidencia pública, claridad académica y protección de datos personales."
+    "privacy_note": "Versión pública sin carné, nombres de terceros, entrevistas identificables ni datos sensibles."
   },
   "subjects": [
     {
@@ -22,6 +21,7 @@
           "technologies": [
             "Python",
             "pandas",
+            "CSV",
             "análisis exploratorio de datos"
           ],
           "results": "Se exploraron dimensiones, tipos de datos, primeras filas, precios máximos y mínimos, reseñas, conteos por género, descuentos, juegos con más dueños, juegos con reseñas altas y picos de jugadores en 24 horas.",
@@ -51,7 +51,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "lab-3",
@@ -87,7 +87,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "tbl2",
@@ -100,7 +100,8 @@
             "Python",
             "Streamlit",
             "módulos",
-            "diccionarios"
+            "diccionarios",
+            "PDF/DOCX como documentación"
           ],
           "results": "Se desarrolló una propuesta de programa que recopila datos del estudiante, evalúa intereses y genera recomendaciones de carreras con recursos para ampliar información.",
           "learnings": "Aprendí a liderar una entrega técnica, dividir responsabilidades, definir variables antes de programar y validar entradas para evitar respuestas incorrectas.",
@@ -126,7 +127,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "uso-de-pandas-y-streamlit",
@@ -139,6 +140,7 @@
             "Python",
             "pandas",
             "Streamlit",
+            "CSV",
             "gráficas interactivas"
           ],
           "results": "Se creó una página con filtros por tipo, generación y legendarios, métricas de conteo, tabla filtrada y gráficas por tipo y generación.",
@@ -167,7 +169,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         }
       ]
     },
@@ -186,7 +188,8 @@
           "technologies": [
             "análisis de caso",
             "discusión académica",
-            "trabajo colaborativo"
+            "trabajo colaborativo",
+            "recurso visual JPEG"
           ],
           "results": "Se abordó un problema con varias preguntas, integrando conceptos de diferentes unidades para construir una respuesta razonada.",
           "learnings": "Aprendí a organizar evidencia, distinguir datos importantes y justificar decisiones en equipo.",
@@ -204,7 +207,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "informe-13",
@@ -216,6 +219,7 @@
           "technologies": [
             "observación científica",
             "registro de campo",
+            "PDF",
             "taxonomía básica"
           ],
           "results": "Se registraron observaciones sobre plantas y orquídeas, incluyendo la importancia de datos como ubicación, recolecta, colector y validación de hallazgos.",
@@ -238,7 +242,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "informe-2",
@@ -250,7 +254,8 @@
           "technologies": [
             "análisis químico",
             "macromoléculas",
-            "registro de resultados"
+            "registro de resultados",
+            "PDF"
           ],
           "results": "Se completaron cuadros de resultados y comparaciones de pruebas, observando cambios que ayudan a identificar distintos tipos de moléculas biológicas.",
           "learnings": "Aprendí a interpretar evidencias visuales, comparar resultados y cuidar la precisión en el registro experimental.",
@@ -272,7 +277,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "informe-11",
@@ -285,7 +290,8 @@
             "biotecnología",
             "electroforesis",
             "microscopía",
-            "análisis de caso"
+            "análisis de caso",
+            "PDF"
           ],
           "results": "Se interpretaron resultados simulados, se compararon hipótesis con evidencias y se registraron observaciones de bacterias al microscopio.",
           "learnings": "Aprendí a conectar procedimiento, hipótesis y evidencia; también a tratar los resultados como parte de una cadena de razonamiento.",
@@ -307,7 +313,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         }
       ]
     },
@@ -328,6 +334,7 @@
             "investigación",
             "corrección asistida",
             "PowerPoint",
+            "PDF",
             "herramientas de IA usadas con criterio"
           ],
           "results": "Se desarrolló un artículo final, una presentación y evidencia del proceso desde idea, estructura, borradores, correcciones y versión final.",
@@ -352,7 +359,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "booktrailer",
@@ -365,7 +372,8 @@
             "Canva",
             "edición de video",
             "ElevenLabs",
-            "edición de imagen"
+            "edición de imagen",
+            "MP4"
           ],
           "results": "Se produjo un video final diseñado para invitar al público a interesarse por el libro leído.",
           "learnings": "Aprendí a transformar una interpretación literaria en narrativa audiovisual y a usar recursos de edición para comunicar con intención.",
@@ -388,7 +396,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "penel-artemis-ii",
@@ -401,6 +409,7 @@
             "investigación académica",
             "panel oral",
             "búsqueda bibliográfica",
+            "PDF",
             "presentación"
           ],
           "results": "Se preparó un informe de investigación, una dinámica de panel, referencias y una presentación ante compañeros del curso.",
@@ -426,7 +435,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         }
       ]
     },
@@ -444,6 +453,7 @@
           "authors": "Autor del portafolio. Versión pública sin datos personales.",
           "technologies": [
             "MIT App Inventor",
+            "AIA",
             "diseño de interfaz",
             "eventos de usuario"
           ],
@@ -469,7 +479,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "proyecto-integrador",
@@ -480,10 +490,12 @@
           "authors": "Equipo de trabajo del curso. Versión pública sin nombres de participantes ni datos biométricos crudos.",
           "technologies": [
             "impresión 3D",
+            "STL",
             "HTML",
             "documentación técnica",
             "NeuroLab",
-            "análisis de métricas biométricas"
+            "análisis de métricas biométricas",
+            "PDF/DOCX"
           ],
           "results": "Se documentó el uso de una pirámide tipo rompecabezas, se generó una guía de ensamblaje y se trabajó con explicaciones de métricas biométricas. La versión pública conserva el proceso y omite datos personales o sensibles.",
           "learnings": "Aprendí a equilibrar creatividad técnica con ética de datos: no todo lo que se puede medir debe publicarse completo.",
@@ -544,7 +556,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "video-juego-con-geenfoot",
@@ -556,7 +568,10 @@
           "technologies": [
             "Java",
             "Greenfoot",
-            "programación orientada a objetos"
+            "programación orientada a objetos",
+            "imágenes PNG/JPEG",
+            "sonidos MP3",
+            "MP4"
           ],
           "results": "Se creó un mundo de 600x400 con personaje, tuberías, puntaje, sonidos de vuelo/colisión y pantalla de Game Over.",
           "learnings": "Aprendí a pensar en objetos que actúan dentro de un mundo, a separar clases y a conectar interacción del usuario con respuesta visual y sonora.",
@@ -607,7 +622,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         }
       ]
     },
@@ -655,7 +670,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         }
       ]
     },
@@ -674,7 +689,9 @@
           "technologies": [
             "química experimental",
             "cristalización",
-            "observación"
+            "observación",
+            "PDF",
+            "PNG"
           ],
           "results": "Se observaron cristales y se concluyó que factores como vibraciones o temperatura inestable afectaron el resultado.",
           "learnings": "Aprendí que en química experimental el ambiente importa: controlar condiciones puede ser tan importante como seguir el procedimiento.",
@@ -697,7 +714,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "proyecto-final",
@@ -739,7 +756,7 @@
             }
           ],
           "featured": true,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         },
         {
           "id": "practica-energia-en-la-comida-chatarra",
@@ -752,7 +769,9 @@
             "calorimetría",
             "combustión",
             "medición de temperatura",
-            "análisis de error"
+            "análisis de error",
+            "PDF",
+            "fotografía de laboratorio"
           ],
           "results": "Se obtuvieron datos energéticos, se compararon con el empaque y se identificó error experimental asociado a pérdidas de calor y condiciones del montaje.",
           "learnings": "Aprendí a conectar medición, cálculo y discusión de error; también a reconocer que un experimento puede cumplir su propósito aunque no sea perfecto.",
@@ -785,7 +804,7 @@
             }
           ],
           "featured": false,
-          "privacy_note": ""
+          "privacy_note": "Esta versión está preparada para portafolio público. Se omitieron números de carné, nombres de compañeros, entrevistas identificables y datos sensibles o crudos cuando podían comprometer privacidad institucional o personal."
         }
       ]
     }
