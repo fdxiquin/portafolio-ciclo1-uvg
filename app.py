@@ -1,18 +1,58 @@
 from __future__ import annotations
 
-import re
+import html
+from pathlib import Path
 
 import streamlit as st
 
-from utils.data_loader import APP_DIR, all_technologies, flatten_projects, load_portfolio, validation_warnings
+from utils.data_loader import APP_DIR
+
+
+PROFILE = {
+    "name": "Tu nombre completo",
+    "career": "Tu carrera",
+    "years": "Tus anos de experiencia o etapa academica",
+    "email": "tu.correo@ejemplo.com",
+    "about": (
+        "Escribe aqui un texto largo sobre ti. Puedes explicar quien eres, que te interesa, "
+        "que tipo de problemas te gusta resolver, como ha sido tu formacion y que valores "
+        "quieres reflejar en tu portafolio."
+    ),
+    "projection": (
+        "Escribe aqui tu proyeccion personal. Puedes hablar de tus metas academicas, "
+        "profesionales y personales, las areas en las que quieres crecer y el impacto que "
+        "te gustaria construir con tu carrera."
+    ),
+    "technical_skills": [
+        "Habilidad tecnica 1",
+        "Habilidad tecnica 2",
+        "Habilidad tecnica 3",
+    ],
+    "personal_skills": [
+        "Habilidad personal 1",
+        "Habilidad personal 2",
+        "Habilidad personal 3",
+    ],
+}
+
+PROFILE_ASSET_DIR = APP_DIR / "assets" / "inicio"
+IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".webp")
 
 
 st.set_page_config(
-    page_title="Portafolio Ciclo 1 2026",
-    page_icon="🎓",
+    page_title="Inicio | Portafolio",
+    page_icon="DP",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+
+def find_asset(stem: str) -> Path | None:
+    for extension in IMAGE_EXTENSIONS:
+        path = PROFILE_ASSET_DIR / f"{stem}{extension}"
+        if path.exists():
+            return path
+    return None
 
 
 def inject_styles() -> None:
@@ -26,103 +66,115 @@ def inject_styles() -> None:
             --panel: #ffffff;
             --accent: #176b87;
             --accent-2: #c45f36;
+            --wash: #f6f8fb;
         }
         .block-container {
+            max-width: 1180px;
             padding-top: 2rem;
             padding-bottom: 3rem;
-            max-width: 1180px;
         }
-        .hero {
-            padding: 2.1rem 2.4rem;
-            border-radius: 8px;
+        .hero-copy {
             border: 1px solid var(--line);
-            background: linear-gradient(135deg, #f8fbff 0%, #ffffff 48%, #f7fbf7 100%);
-            margin-bottom: 1.4rem;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f8fbff 0%, #ffffff 55%, #f7fbf7 100%);
+            padding: 2.2rem 2.4rem;
         }
-        .hero h1 {
-            font-size: 2.6rem;
-            line-height: 1.08;
-            margin: 0 0 .5rem 0;
+        .hero-copy h1 {
             color: var(--ink);
+            font-size: 3rem;
+            line-height: 1.04;
             letter-spacing: 0;
+            margin: 0 0 .7rem;
         }
-        .hero p {
+        .hero-copy p {
             color: var(--muted);
             font-size: 1.05rem;
+            line-height: 1.55;
             margin: 0;
         }
-        .metric-row {
+        .asset-placeholder {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: .8rem;
-            margin: 1rem 0 1.4rem;
-        }
-        .metric-box {
-            border: 1px solid var(--line);
+            place-items: center;
+            min-height: 240px;
+            border: 1px dashed #a7b4c2;
             border-radius: 8px;
-            padding: 1rem 1.1rem;
-            background: var(--panel);
-        }
-        .metric-box strong {
-            display: block;
-            font-size: 1.55rem;
-            color: var(--accent);
-        }
-        .metric-box span {
+            background: var(--wash);
             color: var(--muted);
-            font-size: .9rem;
+            text-align: center;
+            padding: 1rem;
         }
-        div[class*="st-key-project_card_"] button {
-            min-height: 228px;
-            width: 100%;
-            align-items: flex-start;
-            justify-content: flex-start;
+        .mini-placeholder {
+            display: grid;
+            place-items: center;
+            width: 96px;
+            height: 96px;
+            border: 1px dashed #a7b4c2;
+            border-radius: 8px;
+            background: var(--wash);
+            color: var(--muted);
+            font-size: .82rem;
+            text-align: center;
+        }
+        .identity h2 {
+            color: var(--ink);
+            font-size: 1.35rem;
+            line-height: 1.2;
+            margin: 0 0 .25rem;
+        }
+        .identity p {
+            color: var(--muted);
+            margin: 0;
+            line-height: 1.45;
+        }
+        .section {
+            border-top: 1px solid var(--line);
+            padding-top: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        .section h3 {
+            color: var(--ink);
+            font-size: 1.25rem;
+            margin: 0 0 .55rem;
+        }
+        .section p {
+            color: #344054;
+            font-size: 1rem;
+            line-height: 1.65;
+            margin: 0;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: .7rem;
+        }
+        .skill-box {
             border: 1px solid var(--line);
             border-radius: 8px;
             background: var(--panel);
-            box-shadow: 0 6px 18px rgba(23, 32, 51, .06);
-            color: var(--ink);
-            line-height: 1.35;
-            padding: 1.1rem;
-            text-align: left;
-            transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
-            white-space: normal;
+            padding: 1rem 1.1rem;
         }
-        div[class*="st-key-project_card_"] button:hover {
-            border-color: var(--accent);
-            box-shadow: 0 10px 24px rgba(23, 32, 51, .1);
-            color: var(--ink);
-            transform: translateY(-2px);
+        .skill-box h4 {
+            color: var(--accent);
+            margin: 0 0 .55rem;
+            font-size: 1rem;
         }
-        .detail-section {
-            border-top: 1px solid var(--line);
-            padding-top: 1rem;
-            margin-top: 1rem;
+        .skill-box ul {
+            margin: 0;
+            padding-left: 1.15rem;
+            color: #344054;
+            line-height: 1.7;
         }
-        .detail-section h4 {
-            margin: 0 0 .4rem 0;
-            color: var(--ink);
-        }
-        .privacy-note {
-            border-left: 4px solid var(--accent);
-            background: #eef7fa;
-            padding: .9rem 1rem;
-            border-radius: 6px;
-            color: #184355;
-            margin: 1rem 0;
-        }
-        .thanks-note {
-            border-left: 4px solid var(--accent-2);
-            background: #fff6f0;
-            padding: .9rem 1rem;
-            border-radius: 6px;
-            color: #65402d;
-            margin: 1rem 0 1.4rem;
-        }
-        @media (max-width: 800px) {
-            .metric-row { grid-template-columns: 1fr; }
-            .hero { padding: 1.4rem; }
-            .hero h1 { font-size: 2rem; }
+        @media (max-width: 860px) {
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-copy {
+                padding: 1.5rem;
+            }
+            .hero-copy h1 {
+                font-size: 2.2rem;
+            }
         }
         </style>
         """,
@@ -130,229 +182,85 @@ def inject_styles() -> None:
     )
 
 
-def first_image(project: dict) -> str | None:
-    for media in project.get("media", []):
-        if media.get("type") == "image":
-            return media.get("path")
-    return None
-
-
-def project_matches(project: dict, query: str) -> bool:
-    if not query:
-        return True
-    haystack = " ".join(
-        [
-            project.get("name", ""),
-            project.get("short_description", ""),
-            project.get("introduction", ""),
-            project.get("results", ""),
-            project.get("learnings", ""),
-            project.get("conclusions", ""),
-            project.get("subject_name", ""),
-            " ".join(project.get("technologies", [])),
-        ]
-    ).casefold()
-    return query.casefold() in haystack
-
-
-def filter_projects(projects: list[dict], subjects: list[dict], technologies: list[str]) -> tuple[list[dict], str]:
-    subject_options = ["Todas"] + [subject["name"] for subject in subjects]
-    selected_subject = st.sidebar.selectbox("Materia", subject_options)
-    selected_tech = st.sidebar.multiselect("Herramientas y métodos", technologies)
-    featured_only = st.sidebar.checkbox("Solo destacados")
-    query = st.sidebar.text_input("Buscar", placeholder="Ej. Python, laboratorio, energía...")
-
-    filtered = []
-    for project in projects:
-        if selected_subject != "Todas" and project["subject_name"] != selected_subject:
-            continue
-        if selected_tech and not set(selected_tech).issubset(set(project.get("technologies", []))):
-            continue
-        if featured_only and not project.get("featured"):
-            continue
-        if not project_matches(project, query):
-            continue
-        filtered.append(project)
-    return filtered, selected_subject
-
-
-def render_project_selector(projects: list[dict]) -> None:
-    project_lookup = {
-        f'{project["name"]} · {project["subject_name"]}': project
-        for project in projects
-    }
-    selected_label = st.sidebar.selectbox("Abrir proyecto", list(project_lookup.keys()))
-    selected_project = project_lookup[selected_label]
-    if st.sidebar.button("Ver proyecto seleccionado", use_container_width=True):
-        open_project(selected_project)
-        st.rerun()
-
-
-def safe_key(value: str) -> str:
-    return re.sub(r"[^a-zA-Z0-9_]", "_", value)
-
-
-def open_project(project: dict) -> None:
-    st.session_state["open_project_id"] = project["id"]
-
-
-def close_project_dialog() -> None:
-    st.session_state.pop("open_project_id", None)
-
-
-def opened_project(projects: list[dict]) -> dict | None:
-    project_id = st.session_state.get("open_project_id")
-    return next((project for project in projects if project.get("id") == project_id), None)
-
-
-def render_thanks(data: dict, selected_subject: str) -> None:
-    if selected_subject == "Todas":
-        thanks = data.get("site", {}).get("thanks", "")
+def render_photo(path: Path | None) -> None:
+    if path:
+        st.image(str(path), use_container_width=True)
     else:
-        subject = next(
-            (item for item in data.get("subjects", []) if item.get("name") == selected_subject),
-            {},
-        )
-        thanks = subject.get("thanks", "")
-
-    if thanks:
-        st.markdown(f'<div class="thanks-note"><strong>Agradecimientos</strong><br>{thanks}</div>', unsafe_allow_html=True)
+        st.markdown('<div class="asset-placeholder">Foto</div>', unsafe_allow_html=True)
 
 
-def render_metrics(data: dict, projects: list[dict], technologies: list[str]) -> None:
-    st.markdown(
-        f"""
-        <div class="metric-row">
-            <div class="metric-box"><strong>{len(data.get("subjects", []))}</strong><span>Materias</span></div>
-            <div class="metric-box"><strong>{len(projects)}</strong><span>Proyectos</span></div>
-            <div class="metric-box"><strong>{len(technologies)}</strong><span>Herramientas y métodos</span></div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+def render_logo(path: Path | None) -> None:
+    if path:
+        st.image(str(path), use_container_width=True)
+    else:
+        st.markdown('<div class="mini-placeholder">Logo</div>', unsafe_allow_html=True)
 
 
-def render_card(project: dict) -> None:
-    technologies = ", ".join(project.get("technologies", [])[:4])
-    label = (
-        f"{project['subject_name']}\n\n"
-        f"**{project['name']}**\n\n"
-        f"{project['short_description']}\n\n"
-        f"{technologies}"
-    )
-
-    with st.container(key=f"project_card_{safe_key(project['id'])}"):
-        if st.button(label, key=f"open_{safe_key(project['id'])}", use_container_width=True):
-            open_project(project)
-            st.rerun()
-
-
-def render_gallery(project: dict) -> None:
-    media_items = project.get("media", [])
-    if not media_items:
-        st.info("Este proyecto no tiene recursos multimedia públicos asociados todavía.")
-        return
-
-    for media in media_items:
-        path = APP_DIR / media["path"]
-        caption = media.get("caption", "Recurso visual")
-        if media.get("type") == "image":
-            st.image(str(path), caption=caption, use_container_width=True)
-        elif media.get("type") == "video":
-            st.video(str(path))
-            st.caption(caption)
-
-
-def render_detail(project: dict) -> None:
-    st.markdown(f"## {project['name']}")
-    st.caption(project["subject_name"])
-    image = first_image(project)
-    if image:
-        st.image(str(APP_DIR / image), use_container_width=True)
-
-    st.markdown(project.get("introduction", ""))
-
-    sections = [
-        ("Razón de realización", project.get("reason", "")),
-        ("Autores", project.get("authors", "")),
-        ("Resultados", project.get("results", "")),
-        ("Aprendizajes", project.get("learnings", "")),
-        ("Conclusiones", project.get("conclusions", "")),
-    ]
-    for title, body in sections:
-        st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
-        st.write(body)
-
-    st.markdown('<div class="detail-section"><h4>Herramientas y métodos</h4></div>', unsafe_allow_html=True)
-    st.write(" ".join(f"`{tech}`" for tech in project.get("technologies", [])))
-
-    st.markdown('<div class="detail-section"><h4>Recursos disponibles</h4></div>', unsafe_allow_html=True)
-    for resource in project.get("resources", []):
-        st.write(f"- {resource}")
-
-    st.markdown('<div class="detail-section"><h4>Galería pública</h4></div>', unsafe_allow_html=True)
-    render_gallery(project)
-
-    if project.get("privacy_note"):
-        st.markdown(f'<div class="privacy-note">{project["privacy_note"]}</div>', unsafe_allow_html=True)
-
-
-@st.dialog("Detalle del proyecto", width="large", dismissible=True, on_dismiss=close_project_dialog)
-def render_project_dialog(project: dict) -> None:
-    render_detail(project)
-    if st.button("Cerrar"):
-        close_project_dialog()
-        st.rerun()
+def render_list(items: list[str]) -> str:
+    return "".join(f"<li>{html.escape(item)}</li>" for item in items)
 
 
 def main() -> None:
     inject_styles()
-    data = load_portfolio()
-    projects = flatten_projects(data)
-    technologies = all_technologies(projects)
+    photo = find_asset("foto")
+    logo = find_asset("logo")
 
-    site = data["site"]
+    hero_col, media_col = st.columns([1.35, .65], gap="large")
+
+    with hero_col:
+        st.markdown(
+            f"""
+            <div class="hero-copy">
+                <h1>Portafolio profesional de {html.escape(PROFILE["name"])}</h1>
+                <p>{html.escape(PROFILE["career"])} · {html.escape(PROFILE["years"])} · {html.escape(PROFILE["email"])}</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with media_col:
+        render_photo(photo)
+        logo_col, info_col = st.columns([.35, .65], gap="medium")
+        with logo_col:
+            render_logo(logo)
+        with info_col:
+            st.markdown(
+                f"""
+                <div class="identity">
+                    <h2>{html.escape(PROFILE["name"])}</h2>
+                    <p>{html.escape(PROFILE["career"])}</p>
+                    <p>{html.escape(PROFILE["email"])}</p>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
     st.markdown(
         f"""
-        <section class="hero">
-            <h1>{site["title"]}</h1>
-            <p>{site["subtitle"]} · {site["owner"]}</p>
+        <section class="section">
+            <h3>Sobre mi</h3>
+            <p>{html.escape(PROFILE["about"])}</p>
+        </section>
+        <section class="section">
+            <h3>Proyeccion personal</h3>
+            <p>{html.escape(PROFILE["projection"])}</p>
+        </section>
+        <section class="section">
+            <h3>Habilidades</h3>
+            <div class="skill-grid">
+                <div class="skill-box">
+                    <h4>Tecnicas</h4>
+                    <ul>{render_list(PROFILE["technical_skills"])}</ul>
+                </div>
+                <div class="skill-box">
+                    <h4>Personales</h4>
+                    <ul>{render_list(PROFILE["personal_skills"])}</ul>
+                </div>
+            </div>
         </section>
         """,
         unsafe_allow_html=True,
     )
-    st.markdown(f'<div class="privacy-note">{site["privacy_note"]}</div>', unsafe_allow_html=True)
-
-    warnings = validation_warnings(data)
-    if warnings:
-        with st.expander("Advertencias de validación del contenido"):
-            for warning in warnings:
-                st.warning(warning)
-
-    render_metrics(data, projects, technologies)
-
-    st.sidebar.title("Explorar portafolio")
-    filtered, selected_subject = filter_projects(projects, data.get("subjects", []), technologies)
-    st.sidebar.caption(f"{len(filtered)} de {len(projects)} proyectos visibles")
-
-    if not filtered:
-        st.info("No hay proyectos que coincidan con los filtros actuales.")
-        render_thanks(data, selected_subject)
-        return
-
-    render_project_selector(filtered)
-    dialog_project = opened_project(filtered)
-
-    if dialog_project:
-        render_project_dialog(dialog_project)
-
-    for row_start in range(0, len(filtered), 3):
-        columns = st.columns(3)
-        for column, project in zip(columns, filtered[row_start : row_start + 3]):
-            with column:
-                render_card(project)
-
-    render_thanks(data, selected_subject)
 
 
 if __name__ == "__main__":

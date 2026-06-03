@@ -14,13 +14,39 @@ streamlit run app.py
 ```text
 streamlit_portafolio/
 |- app.py
+|- pages/Portafolio.py
 |- data/portfolio.json
 |- assets/
+|  `- inicio/
 |- utils/data_loader.py
 |- utils/validators.py
 |- requirements.txt
 `- README.md
 ```
+
+`app.py` es la pagina de inicio. La pagina de proyectos esta en `pages/Portafolio.py`.
+
+## Personalizar La Pagina De Inicio
+
+Edita los textos del diccionario `PROFILE` en `app.py`:
+
+- `name`
+- `career`
+- `years`
+- `email`
+- `about`
+- `projection`
+- `technical_skills`
+- `personal_skills`
+
+Agrega tus imagenes en `assets/inicio/` con estos nombres:
+
+```text
+foto.jpg
+logo.png
+```
+
+Tambien funcionan las extensiones `.png`, `.jpg`, `.jpeg` y `.webp`, siempre que el nombre base sea `foto` o `logo`.
 
 ## Como Se Mantiene El Contenido
 
