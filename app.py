@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import streamlit as st
@@ -80,6 +81,7 @@ def inject_styles() -> None:
             background: var(--panel);
             padding: 1.1rem;
             box-shadow: 0 6px 18px rgba(23, 32, 51, .06);
+            transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
         }
         .project-card h3 {
             color: var(--ink);
@@ -109,6 +111,28 @@ def inject_styles() -> None:
             padding: .18rem .5rem;
             margin: .12rem .16rem .12rem 0;
             font-size: .76rem;
+        }
+        div[class*="st-key-project_card_"] button {
+            min-height: 228px;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--panel);
+            box-shadow: 0 6px 18px rgba(23, 32, 51, .06);
+            color: var(--ink);
+            line-height: 1.35;
+            padding: 1.1rem;
+            text-align: left;
+            transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+            white-space: normal;
+        }
+        div[class*="st-key-project_card_"] button:hover {
+            border-color: var(--accent);
+            box-shadow: 0 10px 24px rgba(23, 32, 51, .1);
+            color: var(--ink);
+            transform: translateY(-2px);
         }
         .detail-section {
             border-top: 1px solid var(--line);
@@ -192,6 +216,36 @@ def filter_projects(projects: list[dict], subjects: list[dict], technologies: li
     return filtered, selected_subject
 
 
+def select_project(projects: list[dict]) -> dict:
+    project_lookup = {
+        f'{project["name"]} · {project["subject_name"]}': project
+        for project in projects
+    }
+    selected_label = st.sidebar.selectbox("Abrir proyecto", list(project_lookup.keys()))
+    selected_project = project_lookup[selected_label]
+    if st.sidebar.button("Ver proyecto seleccionado", use_container_width=True):
+        open_project(selected_project)
+        st.rerun()
+    return selected_project
+
+
+def safe_key(value: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9_]", "_", value)
+
+
+def open_project(project: dict) -> None:
+    st.session_state["open_project_id"] = project["id"]
+
+
+def close_project_dialog() -> None:
+    st.session_state.pop("open_project_id", None)
+
+
+def opened_project(projects: list[dict]) -> dict | None:
+    project_id = st.session_state.get("open_project_id")
+    return next((project for project in projects if project.get("id") == project_id), None)
+
+
 def render_thanks(data: dict, selected_subject: str) -> None:
     if selected_subject == "Todas":
         thanks = data.get("site", {}).get("thanks", "")
@@ -220,18 +274,18 @@ def render_metrics(data: dict, projects: list[dict], technologies: list[str]) ->
 
 
 def render_card(project: dict) -> None:
-    tags = "".join(f'<span class="tag">{tech}</span>' for tech in project.get("technologies", [])[:4])
-    st.markdown(
-        f"""
-        <div class="project-card">
-            <div class="eyebrow">{project["subject_name"]}</div>
-            <h3>{project["name"]}</h3>
-            <p>{project["short_description"]}</p>
-            <div>{tags}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
+    technologies = ", ".join(project.get("technologies", [])[:4])
+    label = (
+        f"{project['subject_name']}\n\n"
+        f"**{project['name']}**\n\n"
+        f"{project['short_description']}\n\n"
+        f"{technologies}"
     )
+
+    with st.container(key=f"project_card_{safe_key(project['id'])}"):
+        if st.button(label, key=f"open_{safe_key(project['id'])}", use_container_width=True):
+            open_project(project)
+            st.rerun()
 
 
 def render_gallery(project: dict) -> None:
@@ -284,6 +338,14 @@ def render_detail(project: dict) -> None:
         st.markdown(f'<div class="privacy-note">{project["privacy_note"]}</div>', unsafe_allow_html=True)
 
 
+@st.dialog("Detalle del proyecto", width="large", dismissible=True, on_dismiss=close_project_dialog)
+def render_project_dialog(project: dict) -> None:
+    render_detail(project)
+    if st.button("Cerrar"):
+        close_project_dialog()
+        st.rerun()
+
+
 def main() -> None:
     inject_styles()
     data = load_portfolio()
@@ -319,24 +381,17 @@ def main() -> None:
         render_thanks(data, selected_subject)
         return
 
-    project_lookup = {f'{project["name"]} · {project["subject_name"]}': project for project in filtered}
-    selected_label = st.selectbox("Abrir proyecto", list(project_lookup.keys()))
-    selected_project = project_lookup[selected_label]
+    select_project(filtered)
+    dialog_project = opened_project(filtered)
 
-    tab_cards, tab_detail = st.tabs(["Vista general", "Detalle del proyecto"])
+    if dialog_project:
+        render_project_dialog(dialog_project)
 
-    with tab_cards:
-        for row_start in range(0, len(filtered), 3):
-            columns = st.columns(3)
-            for column, project in zip(columns, filtered[row_start : row_start + 3]):
-                with column:
-                    image = first_image(project)
-                    if image:
-                        st.image(str(APP_DIR / image), use_container_width=True)
-                    render_card(project)
-
-    with tab_detail:
-        render_detail(selected_project)
+    for row_start in range(0, len(filtered), 3):
+        columns = st.columns(3)
+        for column, project in zip(columns, filtered[row_start : row_start + 3]):
+            with column:
+                render_card(project)
 
     render_thanks(data, selected_subject)
 
