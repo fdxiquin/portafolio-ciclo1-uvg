@@ -1,8 +1,6 @@
-# Portafolio Streamlit Reutilizable
+# Portafolio Ciclo 1 2026
 
-# portafolio-ciclo1-uvg
-Para contarle al mundo un poquito de lo que aprendí y aplique en mi primer ciclo de la Universidad del Valle de Guatemala, como formación de Ingeniero en Ciencias de la Computación y Tecnologías de la Información.
-
+Portafolio academico en Streamlit para presentar proyectos universitarios seleccionados del primer ciclo en la Universidad del Valle de Guatemala.
 
 ## Ejecutar Localmente
 
@@ -15,13 +13,30 @@ streamlit run app.py
 
 ```text
 streamlit_portafolio/
-├─ app.py
-├─ data/portfolio.json
-├─ assets/
-├─ scripts/build_portfolio_data.py
-├─ utils/data_loader.py
-└─ utils/validators.py
+|- app.py
+|- data/portfolio.json
+|- assets/
+|- utils/data_loader.py
+|- utils/validators.py
+|- requirements.txt
+`- README.md
 ```
+
+## Como Se Mantiene El Contenido
+
+El contenido publico del portafolio se mantiene directamente en:
+
+```text
+data/portfolio.json
+```
+
+Las imagenes y videos publicos se guardan en:
+
+```text
+assets/<materia>/<proyecto>/
+```
+
+La app valida que los archivos multimedia declarados en el JSON existan, no esten vacios y no superen el limite recomendado de 25 MB.
 
 ## Agregar Una Materia
 
@@ -31,24 +46,25 @@ Edita `data/portfolio.json` y agrega un objeto nuevo dentro de `subjects`:
 {
   "id": "nueva_materia",
   "name": "Nueva Materia",
-  "description": "Descripción corta de la materia.",
+  "description": "Descripcion corta de la materia.",
+  "thanks": "Agradecimiento o reflexion breve de la materia.",
   "projects": []
 }
 ```
 
-Usa un `id` único, sin espacios ni acentos.
+Usa un `id` unico, sin espacios ni acentos.
 
 ## Agregar Un Proyecto
 
-Dentro de la materia correspondiente, agrega un objeto en `projects` con los campos ya usados por los demás proyectos:
+Dentro de la materia correspondiente, agrega un objeto en `projects`:
 
 ```json
 {
   "id": "mi-proyecto",
   "name": "Mi proyecto",
-  "short_description": "Descripción breve.",
-  "introduction": "Texto de introducción.",
-  "reason": "Razón de realización.",
+  "short_description": "Descripcion breve.",
+  "introduction": "Texto de introduccion.",
+  "reason": "Razon de realizacion.",
   "authors": "Autor del portafolio.",
   "technologies": ["Python", "Streamlit"],
   "results": "Resultados principales.",
@@ -61,38 +77,42 @@ Dentro de la materia correspondiente, agrega un objeto en `projects` con los cam
 }
 ```
 
-## Agregar Imágenes O Videos
+Si el proyecto necesita una nota publica de privacidad, puedes agregar:
+
+```json
+"privacy_note": "Se omitieron datos personales o sensibles."
+```
+
+## Agregar Imagenes O Videos
 
 1. Crea una carpeta dentro de `assets/<materia>/<proyecto>/`.
-2. Copia ahí la imagen optimizada.
+2. Copia ahi el archivo optimizado.
 3. Agrega la ruta relativa en `media`:
 
 ```json
 {
   "type": "image",
   "path": "assets/algoritmos/mi-proyecto/imagen.jpg",
-  "caption": "Descripción de la imagen"
+  "caption": "Descripcion de la imagen"
 }
 ```
 
-Para GitHub y Streamlit Community Cloud, evita archivos grandes. La app advierte si un recurso pesa más de 25 MB o si está vacío.
+Para videos usa:
 
-## Regenerar Desde La Carpeta Portafolio
-
-Si actualizas la carpeta `Portafolio/` con nuevos `PROYECTO.txt` y assets, puedes regenerar el JSON y los recursos optimizados:
-
-```bash
-python scripts/build_portfolio_data.py
+```json
+{
+  "type": "video",
+  "path": "assets/algoritmos/mi-proyecto/demo.mp4",
+  "caption": "Demo del proyecto"
+}
 ```
-
-El script omite videos mayores a 25 MB y archivos vacíos.
 
 ## Publicar En GitHub
 
 1. Crea un repositorio en GitHub.
-2. Sube la carpeta `streamlit_portafolio`.
-3. Verifica que `requirements.txt`, `app.py`, `data/portfolio.json` y `assets/` estén incluidos.
-4. Evita subir documentos privados, carnés, entrevistas identificables o datos sensibles.
+2. Sube esta carpeta del proyecto.
+3. Verifica que `requirements.txt`, `app.py`, `data/portfolio.json`, `utils/` y `assets/` esten incluidos.
+4. Evita subir documentos privados, carnes, entrevistas identificables o datos sensibles.
 
 ## Desplegar En Streamlit Community Cloud
 
@@ -105,4 +125,4 @@ El script omite videos mayores a 25 MB y archivos vacíos.
 
 ## Privacidad
 
-Esta versión está preparada para portafolio público: no incluye carné, nombres de compañeros, entrevistas identificables ni datos biométricos crudos.
+Esta version esta preparada para portafolio publico: no incluye carne, nombres de companeros, entrevistas identificables ni datos biometricos crudos.

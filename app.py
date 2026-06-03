@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
 import streamlit as st
 
@@ -25,7 +24,6 @@ def inject_styles() -> None:
             --muted: #667085;
             --line: #d9e2ec;
             --panel: #ffffff;
-            --soft: #f5f7fb;
             --accent: #176b87;
             --accent-2: #c45f36;
         }
@@ -73,44 +71,6 @@ def inject_styles() -> None:
         .metric-box span {
             color: var(--muted);
             font-size: .9rem;
-        }
-        .project-card {
-            min-height: 228px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: var(--panel);
-            padding: 1.1rem;
-            box-shadow: 0 6px 18px rgba(23, 32, 51, .06);
-            transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
-        }
-        .project-card h3 {
-            color: var(--ink);
-            font-size: 1.1rem;
-            line-height: 1.25;
-            margin: .35rem 0 .45rem 0;
-        }
-        .project-card p {
-            color: var(--muted);
-            font-size: .92rem;
-            line-height: 1.45;
-            margin: 0 0 .7rem 0;
-        }
-        .eyebrow {
-            color: var(--accent-2);
-            font-size: .78rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: .04em;
-        }
-        .tag {
-            display: inline-block;
-            border: 1px solid #cfd8e3;
-            background: #f8fafc;
-            color: #334155;
-            border-radius: 999px;
-            padding: .18rem .5rem;
-            margin: .12rem .16rem .12rem 0;
-            font-size: .76rem;
         }
         div[class*="st-key-project_card_"] button {
             min-height: 228px;
@@ -216,7 +176,7 @@ def filter_projects(projects: list[dict], subjects: list[dict], technologies: li
     return filtered, selected_subject
 
 
-def select_project(projects: list[dict]) -> dict:
+def render_project_selector(projects: list[dict]) -> None:
     project_lookup = {
         f'{project["name"]} · {project["subject_name"]}': project
         for project in projects
@@ -226,7 +186,6 @@ def select_project(projects: list[dict]) -> dict:
     if st.sidebar.button("Ver proyecto seleccionado", use_container_width=True):
         open_project(selected_project)
         st.rerun()
-    return selected_project
 
 
 def safe_key(value: str) -> str:
@@ -381,7 +340,7 @@ def main() -> None:
         render_thanks(data, selected_subject)
         return
 
-    select_project(filtered)
+    render_project_selector(filtered)
     dialog_project = opened_project(filtered)
 
     if dialog_project:
