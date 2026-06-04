@@ -47,9 +47,6 @@ PROFILE = {
     ],
 }
 
-PROFILE_ASSET_DIR = APP_DIR / "assets" / "inicio"
-IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".webp")
-
 
 st.set_page_config(
     page_title="Inicio | Portafolio",
@@ -58,13 +55,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-
-def find_asset(stem: str) -> Path | None:
-    for extension in IMAGE_EXTENSIONS:
-        path = PROFILE_ASSET_DIR / f"{stem}{extension}"
-        if path.exists():
-            return path
-    return None
 
 
 def inject_styles() -> None:
@@ -214,8 +204,8 @@ def render_list(items: list[str]) -> str:
 
 def main() -> None:
     inject_styles()
-    photo = find_asset("foto")
-    logo = find_asset("logo")
+    photo = Path("assets/inicio/Foto.jpg")
+    logo = Path("assets/inicio/Logo.png")
 
     hero_col, media_col = st.columns([1.35, .65], gap="large")
 
