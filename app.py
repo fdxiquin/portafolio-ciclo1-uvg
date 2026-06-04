@@ -9,29 +9,41 @@ from utils.data_loader import APP_DIR
 
 
 PROFILE = {
-    "name": "Tu nombre completo",
-    "career": "Tu carrera",
-    "years": "Tus anos de experiencia o etapa academica",
-    "email": "tu.correo@ejemplo.com",
+    "name": "Daniel Fernando Xiquin Tezén",
+    "career": "Ingeniería en Ciencias de la Computación y Tecnologías de la Información",
+    "years": "Ciclo 1 2026",
+    "email": "xiq26896@uvg.edu.gt",
     "about": (
-        "Escribe aqui un texto largo sobre ti. Puedes explicar quien eres, que te interesa, "
-        "que tipo de problemas te gusta resolver, como ha sido tu formacion y que valores "
-        "quieres reflejar en tu portafolio."
+        """Soy Daniel Fernando Xiquin Tezén, un joven guatemalteco comprometido con su crecimiento 
+        personal, académico y espiritual. Me considero una persona responsable, honesta y dedicada, 
+        formada bajo los valores de mi familia, mi fe católica y el amor por mis tradiciones. Desde 
+        pequeño he buscado superarme constantemente, participando en actividades académicas, sociales 
+        y espirituales que han fortalecido mi liderazgo y mi visión de futuro. Me apasiona el aprendizaje, 
+        la tecnología y el emprendimiento, y tengo el deseo de utilizar mis conocimientos para contribuir 
+        al desarrollo de Guatemala y apoyar a quienes me rodean."""
     ),
     "projection": (
-        "Escribe aqui tu proyeccion personal. Puedes hablar de tus metas academicas, "
-        "profesionales y personales, las areas en las que quieres crecer y el impacto que "
-        "te gustaria construir con tu carrera."
+        """Mi principal sueño profesional es convertirme en un Ingeniero en Ciencias de la Computación y Tecnologías de la Información, graduándome con honores de la Universidad del Valle de Guatemala. 
+        Aspiro a trabajar para una empresa internacional en el área de informática, desempeñándome de manera remota mientras administro mis propios negocios y los de mi familia. 
+        También deseo desarrollar proyectos emprendedores, especialmente relacionados con experiencias en la naturaleza y la innovación tecnológica. 
+        Además, sueño con aportar al crecimiento de Guatemala a través de mis habilidades, demostrando ética, liderazgo y compromiso en cada proyecto que realice."""
     ),
     "technical_skills": [
-        "Habilidad tecnica 1",
-        "Habilidad tecnica 2",
-        "Habilidad tecnica 3",
+        "Conocimientos básicos de programación con Python",
+        "Manejo de herramientas digitales para productividad y aprendizaje",
+        "Experiencia en coordinación, exposición y defensa de proyectos",
+        "Inglés intermedio en desarrollo",
+        "Planificación estratégica y administración del tiempo",
+        "Pensamiento crítico y análisis de datos",
+        "Metodología de investigación",
     ],
     "personal_skills": [
-        "Habilidad personal 1",
-        "Habilidad personal 2",
-        "Habilidad personal 3",
+        "Capacidad de análisis lógico y resolución de problemas",
+        "Comunicación efectiva y capacidad para trabajar bajo presión",
+        "Liderazgo y trabajo en equipo",
+        "Perseverancia para alcanzar metas a corto, mediano y largo plazo",
+        "Facilidad para adaptarse y aprender nuevas habilidades",
+        "Fortaleza espiritual y valores sólidos",
     ],
 }
 

@@ -1,4 +1,4 @@
-Agrega aqui tus imagenes de inicio:
+Archivo para agregar tus imagenes de inicio:
 
 - `foto.jpg`, `foto.png`, `foto.jpeg` o `foto.webp`
 - `logo.jpg`, `logo.png`, `logo.jpeg` o `logo.webp`
