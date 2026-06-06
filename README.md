@@ -46,7 +46,6 @@ foto.jpg
 logo.png
 ```
 
-Tambien funcionan las extensiones `.png`, `.jpg`, `.jpeg` y `.webp`, siempre que el nombre base sea `foto` o `logo`.
 
 ## Como Se Mantiene El Contenido
 
@@ -90,8 +89,10 @@ Dentro de la materia correspondiente, agrega un objeto en `projects`:
   "name": "Mi proyecto",
   "short_description": "Descripcion breve.",
   "introduction": "Texto de introduccion.",
-  "reason": "Razon de realizacion.",
   "authors": "Autor del portafolio.",
+  "reason": "Razon de realizacion.",
+  "bloom_level":"Nivel de taxonomia de bloom",
+  "reason_bloom_level":"Explicación del nivel de taxonomia de bloom",
   "technologies": ["Python", "Streamlit"],
   "results": "Resultados principales.",
   "learnings": "Aprendizajes.",
@@ -133,22 +134,7 @@ Para videos usa:
 }
 ```
 
-## Publicar En GitHub
+##Privacidad
 
-1. Crea un repositorio en GitHub.
-2. Sube esta carpeta del proyecto.
-3. Verifica que `requirements.txt`, `app.py`, `data/portfolio.json`, `utils/` y `assets/` esten incluidos.
-4. Evita subir documentos privados, carnes, entrevistas identificables o datos sensibles.
-
-## Desplegar En Streamlit Community Cloud
-
-1. Entra a Streamlit Community Cloud.
-2. Selecciona el repositorio de GitHub.
-3. Configura:
-   - Main file path: `app.py`
-   - Python dependencies: `requirements.txt`
-4. Despliega la app.
-
-## Privacidad
-
-Esta version esta preparada para portafolio publico: no incluye carne, nombres de companeros, entrevistas identificables ni datos biometricos crudos.
+Este portafolio esta creado con fines académicos, es de uno académico y personal
+Esta totalmente prohibida la extracción parcial o total de la información contenida en el proyecto.
