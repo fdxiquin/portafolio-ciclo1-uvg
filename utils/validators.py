@@ -14,13 +14,14 @@ REQUIRED_PROJECT_FIELDS = {
     "reason",
     "authors",
     "bloom_level",
+    "reason_bloom_level",
+    "featured",
     "technologies",
     "results",
     "learnings",
     "conclusions",
     "resources",
     "media",
-    "featured",
 }
 
 MAX_ASSET_MB = 25

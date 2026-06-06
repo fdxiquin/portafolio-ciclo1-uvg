@@ -144,6 +144,9 @@ def project_matches(project: dict, query: str) -> bool:
             project.get("name", ""),
             project.get("short_description", ""),
             project.get("introduction", ""),
+            project.get("reason", ""),
+            project.get("bloom_level", ""), 
+            project.get("reason_bloom_level", ""),
             project.get("results", ""),
             project.get("learnings", ""),
             project.get("conclusions", ""),
@@ -270,7 +273,8 @@ def render_detail(project: dict) -> None:
     sections1 = [
         ("Autores", project.get("authors", "")),
         ("Razon de realizacion", project.get("reason", "")),
-        ("Taxonomía de Bloom", project.get("bloom_level", "")),
+        ("Nivel de dominio de la taxonomia de Bloom", project.get("bloom_level", "")),
+        ("Explicacion del nivel de dominio de la taxonomia de Bloom", project.get("reason_bloom_level", "")),
     ]
     sections2 = [
         ("Resultados", project.get("results", "")),

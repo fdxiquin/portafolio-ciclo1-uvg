@@ -51,6 +51,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": true
         },
         {
@@ -86,6 +87,7 @@
             }
           ],
           "bloom_level": "Aplicar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real",
           "featured": false
         },
         {
@@ -125,6 +127,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": true,
           "privacy_note": "Se omitieron nombres de integrantes y datos personales del equipo; se describe solo el rol del autor y el resultado académico."
         },
@@ -167,6 +170,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": false
         }
       ],
@@ -204,6 +208,7 @@
             }
           ],
           "bloom_level": "Evaluar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y evaluar una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": false,
           "privacy_note": "Se presenta como síntesis académica sin nombres de integrantes ni datos personales del equipo."
         },
@@ -238,6 +243,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": false
         },
         {
@@ -271,6 +277,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": false
         },
         {
@@ -305,6 +312,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": false
         }
       ],
@@ -350,6 +358,7 @@
             }
           ],
           "bloom_level": "Evaluar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y evaluar una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": false
         },
         {
@@ -385,6 +394,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": true
         },
         {
@@ -422,6 +432,7 @@
             }
           ],
           "bloom_level": "Evaluar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y evaluar una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": false,
           "privacy_note": "Se omitieron nombres de integrantes; se conserva el enfoque académico, el tema investigado y el rol del autor."
         }
@@ -466,6 +477,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": false
         },
         {
@@ -540,6 +552,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": true,
           "privacy_note": "Se omitieron nombres de participantes, datos biométricos crudos y cualquier información sensible del laboratorio NeuroLab."
         },
@@ -604,6 +617,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": true
         }
       ],
@@ -652,6 +666,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": false
         }
       ],
@@ -694,6 +709,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": false
         },
         {
@@ -735,6 +751,7 @@
             }
           ],
           "bloom_level": "Crear",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y crear una solucion para un problema real y demostrar mis habilidades de programacion",
           "featured": true,
           "privacy_note": "Se omitieron nombres de integrantes y datos personales del equipo; se conserva la descripción pública del prototipo y del póster."
         },
@@ -781,6 +798,7 @@
             }
           ],
           "bloom_level": "Analizar",
+          "reason_bloom_level": "Ya que permitio recordar conceptos, comprender tu utlidad y estrutura, aplicarlos en un contexto real y analizr su funcionamiento",
           "featured": false
         }
       ],
