@@ -265,23 +265,32 @@ def render_gallery(project: dict) -> None:
 def render_detail(project: dict) -> None:
     st.markdown(f"## {project['name']}")
     st.caption(project["subject_name"])
-    image = first_image(project)
-    if image:
-        st.image(str(APP_DIR / image), use_container_width=True)
-
     st.markdown(project.get("introduction", ""))
 
-    sections = [
-        ("Razon de realizacion", project.get("reason", "")),
+    sections1 = [
         ("Autores", project.get("authors", "")),
+        ("Razon de realizacion", project.get("reason", "")),
+        ("Taxonomía de Bloom", project.get("bloom_level", "")),
+    ]
+    sections2 = [
         ("Resultados", project.get("results", "")),
         ("Aprendizajes", project.get("learnings", "")),
         ("Conclusiones", project.get("conclusions", "")),
     ]
-    for title, body in sections:
+
+    
+    for title, body in sections1:
         st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
         st.write(body)
 
+    image = first_image(project)
+    if image:
+        st.image(str(APP_DIR / image), use_container_width=True)
+
+    for title, body in sections2:
+        st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)
+        st.write(body)
+        
     st.markdown('<div class="detail-section"><h4>Herramientas y metodos</h4></div>', unsafe_allow_html=True)
     st.write(" ".join(f"`{tech}`" for tech in project.get("technologies", [])))
 

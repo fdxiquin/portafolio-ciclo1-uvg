@@ -13,6 +13,7 @@ REQUIRED_PROJECT_FIELDS = {
     "introduction",
     "reason",
     "authors",
+    "bloom_level",
     "technologies",
     "results",
     "learnings",

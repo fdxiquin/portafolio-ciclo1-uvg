@@ -50,6 +50,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": true
         },
         {
@@ -84,6 +85,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Aplicar",
           "featured": false
         },
         {
@@ -122,6 +124,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": true,
           "privacy_note": "Se omitieron nombres de integrantes y datos personales del equipo; se describe solo el rol del autor y el resultado académico."
         },
@@ -163,6 +166,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": false
         }
       ],
@@ -199,6 +203,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Evaluar",
           "featured": false,
           "privacy_note": "Se presenta como síntesis académica sin nombres de integrantes ni datos personales del equipo."
         },
@@ -232,6 +237,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": false
         },
         {
@@ -264,6 +270,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": false
         },
         {
@@ -297,6 +304,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": false
         }
       ],
@@ -341,6 +349,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Evaluar",
           "featured": false
         },
         {
@@ -375,6 +384,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": true
         },
         {
@@ -411,6 +421,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Evaluar",
           "featured": false,
           "privacy_note": "Se omitieron nombres de integrantes; se conserva el enfoque académico, el tema investigado y el rol del autor."
         }
@@ -454,6 +465,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": false
         },
         {
@@ -527,6 +539,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": true,
           "privacy_note": "Se omitieron nombres de participantes, datos biométricos crudos y cualquier información sensible del laboratorio NeuroLab."
         },
@@ -590,6 +603,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": true
         }
       ],
@@ -637,6 +651,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": false
         }
       ],
@@ -678,6 +693,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": false
         },
         {
@@ -718,6 +734,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Crear",
           "featured": true,
           "privacy_note": "Se omitieron nombres de integrantes y datos personales del equipo; se conserva la descripción pública del prototipo y del póster."
         },
@@ -763,6 +780,7 @@
               "caption": "Visual resumen"
             }
           ],
+          "bloom_level": "Analizar",
           "featured": false
         }
       ],
