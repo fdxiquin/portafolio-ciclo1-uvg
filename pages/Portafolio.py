@@ -136,33 +136,11 @@ def first_image(project: dict) -> str | None:
     return None
 
 
-def project_matches(project: dict, query: str) -> bool:
-    if not query:
-        return True
-    haystack = " ".join(
-        [
-            project.get("name", ""),
-            project.get("short_description", ""),
-            project.get("introduction", ""),
-            project.get("reason", ""),
-            project.get("bloom_level", ""), 
-            project.get("reason_bloom_level", ""),
-            project.get("results", ""),
-            project.get("learnings", ""),
-            project.get("conclusions", ""),
-            project.get("subject_name", ""),
-            " ".join(project.get("technologies", [])),
-        ]
-    ).casefold()
-    return query.casefold() in haystack
-
-
 def filter_projects(projects: list[dict], subjects: list[dict], technologies: list[str]) -> tuple[list[dict], str]:
     subject_options = ["Todas"] + [subject["name"] for subject in subjects]
     selected_subject = st.sidebar.selectbox("Materia", subject_options)
     selected_tech = st.sidebar.multiselect("Herramientas y metodos", technologies)
     featured_only = st.sidebar.checkbox("Solo destacados")
-    query = st.sidebar.text_input("Buscar", placeholder="Ej. Python, laboratorio, energia...")
 
     filtered = []
     for project in projects:
@@ -172,22 +150,8 @@ def filter_projects(projects: list[dict], subjects: list[dict], technologies: li
             continue
         if featured_only and not project.get("featured"):
             continue
-        if not project_matches(project, query):
-            continue
         filtered.append(project)
     return filtered, selected_subject
-
-
-def render_project_selector(projects: list[dict]) -> None:
-    project_lookup = {
-        f'{project["name"]} · {project["subject_name"]}': project
-        for project in projects
-    }
-    selected_label = st.sidebar.selectbox("Abrir proyecto", list(project_lookup.keys()))
-    selected_project = project_lookup[selected_label]
-    if st.sidebar.button("Ver proyecto seleccionado", use_container_width=True):
-        open_project(selected_project)
-        st.rerun()
 
 
 def safe_key(value: str) -> str:
@@ -352,7 +316,6 @@ def main() -> None:
         render_thanks(data, selected_subject)
         return
 
-    render_project_selector(filtered)
     dialog_project = opened_project(filtered)
 
     if dialog_project:

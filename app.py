@@ -12,7 +12,7 @@ PROFILE = {
     "name": "Daniel Fernando Xiquin Tezén",
     "career": "Ingeniería en Ciencias de la Computación y Tecnologías de la Información",
     "years": "Ciclo 1 2026",
-    "email": "xiq26896@uvg.edu.gt",
+    "email": "fdxiquin@gmail.con",
     "phone_number":"+502 5368 9272",
     "promedio": "86.00",
     "about": (
@@ -96,10 +96,6 @@ def inject_styles() -> None:
             letter-spacing: 0.02em;
             margin: 0;
             white-space: nowrap;
-        }
-        .hero-copy .hero-title-label::after {
-            content: ":";
-            margin-left: 0.15rem;
         }
         .hero-copy .hero-title-name {
             color: var(--ink);
