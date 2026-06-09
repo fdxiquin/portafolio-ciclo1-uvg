@@ -13,6 +13,8 @@ PROFILE = {
     "career": "Ingeniería en Ciencias de la Computación y Tecnologías de la Información",
     "years": "Ciclo 1 2026",
     "email": "xiq26896@uvg.edu.gt",
+    "phone_number":"+502 5368 9272",
+    "promedio": "86.00",
     "about": (
         """Soy Daniel Fernando Xiquin Tezén, un joven guatemalteco comprometido con su crecimiento 
         personal, académico y espiritual. Me considero una persona responsable, honesta y dedicada, 
@@ -47,14 +49,12 @@ PROFILE = {
     ],
 }
 
-
 st.set_page_config(
-    page_title="Inicio | Portafolio",
-    page_icon="DP",
+    page_title="Inico | Daniel Fernando Xiquin Tezén",
+    page_icon="DX",
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
 
 
 def inject_styles() -> None:
@@ -81,17 +81,64 @@ def inject_styles() -> None:
             background: linear-gradient(135deg, #f8fbff 0%, #ffffff 55%, #f7fbf7 100%);
             padding: 2.2rem 2.4rem;
         }
-        .hero-copy h1 {
+        .hero-title-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.45rem 0.7rem;
+            margin: 0 0 0.85rem;
+        }
+        .hero-copy .hero-title-label {
+            color: var(--muted);
+            font-size: 1.75rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            margin: 0;
+            white-space: nowrap;
+        }
+        .hero-copy .hero-title-label::after {
+            content: ":";
+            margin-left: 0.15rem;
+        }
+        .hero-copy .hero-title-name {
             color: var(--ink);
             font-size: 3rem;
-            line-height: 1.04;
-            letter-spacing: 0;
-            margin: 0 0 .7rem;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin: 0;
         }
-        .hero-copy p {
+        .hero-copy .hero-meta {
             color: var(--muted);
             font-size: 1.05rem;
             line-height: 1.55;
+            margin: 0;
+        }
+        .media_col {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.55;
+            margin: 0;
+        }
+        .promedio-row {
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+            margin-top: 0.8rem;
+        }
+        .hero-copy .promedio-label {
+            color: var(--muted);
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 0;
+        }
+        .hero-copy .promedio-value {
+            color: var(--ink);
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
             margin: 0;
         }
         .asset-placeholder {
@@ -174,8 +221,17 @@ def inject_styles() -> None:
             .hero-copy {
                 padding: 1.5rem;
             }
-            .hero-copy h1 {
-                font-size: 2.2rem;
+            .hero-copy .hero-title-label {
+                font-size: 1.35rem;
+            }
+            .hero-copy .hero-title-name {
+                font-size: 2.25rem;
+            }
+            .hero-copy .promedio-label {
+                font-size: 1.1rem;
+            }
+            .hero-copy .promedio-value {
+                font-size: 2rem;
             }
         }
         </style>
@@ -213,13 +269,20 @@ def main() -> None:
         st.markdown(
             f"""
             <div class="hero-copy">
-                <h1>Portafolio profesional de {html.escape(PROFILE["name"])}</h1>
-                <p>{html.escape(PROFILE["career"])} · {html.escape(PROFILE["years"])} · {html.escape(PROFILE["email"])}</p>
+                <div class="hero-title-row">
+                    <h2 class="hero-title-label">Portafolio profesional de</h2>
+                    <h1 class="hero-title-name">{html.escape(PROFILE["name"])}</h1>
+                </div>
+                <p class="hero-meta">{html.escape(PROFILE["career"])} · {html.escape(PROFILE["years"])}</p>
+                <div class="promedio-row">
+                    <p class="promedio-label">Promedio universitario de:</p>
+                    <p class="promedio-value">{html.escape(PROFILE["promedio"])}</p>
+                </div>
             </div>
             """,
             unsafe_allow_html=True,
         )
-
+        
     with media_col:
         render_photo(photo)
         logo_col, info_col = st.columns([.35, .65], gap="medium")
@@ -230,12 +293,20 @@ def main() -> None:
                 f"""
                 <div class="identity">
                     <h2>{html.escape(PROFILE["name"])}</h2>
-                    <p>{html.escape(PROFILE["career"])}</p>
-                    <p>{html.escape(PROFILE["email"])}</p>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
+        st.markdown(
+        f"""
+        <div class="media_col">
+            <p>{html.escape(PROFILE["career"])}</p>
+            <p>{html.escape(PROFILE["years"])}</p>
+            <p>{html.escape(PROFILE["email"])}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+        )
 
     st.markdown(
         f"""
