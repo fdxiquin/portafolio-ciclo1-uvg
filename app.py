@@ -300,8 +300,7 @@ def main() -> None:
         st.markdown(
         f"""
         <div class="media_col">
-            <p>{html.escape(PROFILE["career"])}</p>
-            <p>{html.escape(PROFILE["years"])}</p>
+            <p>{html.escape(PROFILE["phone_number"])}</p>
             <p>{html.escape(PROFILE["email"])}</p>
         </div>
         """,
