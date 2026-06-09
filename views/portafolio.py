@@ -7,13 +7,6 @@ import streamlit as st
 from utils.data_loader import APP_DIR, all_technologies, flatten_projects, load_portfolio, validation_warnings
 
 
-st.set_page_config(
-    page_title="Proyectos | Portafolio Ciclo 1 2026",
-    page_icon="DP",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
 def inject_styles() -> None:
     st.markdown(
         """
@@ -223,7 +216,7 @@ def render_gallery(project: dict) -> None:
         path = APP_DIR / media["path"]
         caption = media.get("caption", "Recurso visual")
         if media.get("type") == "image":
-            st.image(str(path), caption=caption, use_container_width=True)
+            st.image(str(path), caption=caption, width="stretch")
         elif media.get("type") == "video":
             st.video(str(path))
             st.caption(caption)
@@ -253,7 +246,7 @@ def render_detail(project: dict) -> None:
 
     image = first_image(project)
     if image:
-        st.image(str(APP_DIR / image), use_container_width=True)
+        st.image(str(APP_DIR / image), width="stretch")
 
     for title, body in sections2:
         st.markdown(f'<div class="detail-section"><h4>{title}</h4></div>', unsafe_allow_html=True)

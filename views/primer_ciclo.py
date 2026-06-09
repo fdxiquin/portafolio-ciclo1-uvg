@@ -117,14 +117,6 @@ LEARNINGS = [
 MEDIA_ITEMS: list[MediaItem] = []
 
 
-st.set_page_config(
-    page_title="Mi primer ciclo UVG | Portafolio",
-    page_icon="DP",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
-
 def inject_styles() -> None:
     st.markdown(
         """
@@ -321,7 +313,7 @@ def render_media(items: list[MediaItem]) -> None:
         if not media_path.exists():
             continue
         if media["type"] == "image":
-            st.image(str(media_path), caption=caption, use_container_width=True)
+            st.image(str(media_path), caption=caption, width="stretch")
         elif media["type"] == "video":
             st.video(str(media_path))
             if caption:
